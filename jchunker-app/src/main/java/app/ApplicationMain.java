@@ -1,6 +1,6 @@
 package app;
 
-import java.util.List;
+import java.util.*;
 
 import core.ChunkedText;
 import core.TokenizedText;
@@ -14,11 +14,16 @@ public class ApplicationMain
 	public static void main(String[] args)
 	{
 		// FIXME: (info) parametri de forma : ((dir)/)*{fileName}.{fileExtension}
-		String source      = args[0]; 
-		String destination = args[1]; 
+		//String source      = args[0];
+		//String destination = args[1];
 		
 		TokenizedText tokenizedText = TextUtils.unmarshal();
-		
+
+		//System.out.println(tokenizedText.toString());
+                                     //  testing unmarshall method
+
+		//TextUtils.marshal("src\\main\\resources\\inputFiles\\outputText.xml",tokenizedText);
+                                    // testing marshall method
 		/**
 		 * Step 1. Noun Phrase Chunking
 		 */
@@ -35,7 +40,7 @@ public class ApplicationMain
 		 */
 		ChunkedText mergedText = Merger.merge(chunkedTexts);
 		
-		TextUtils.marshal(destination, mergedText);
+		//TextUtils.marshal(destination, mergedText);
 		
 	}
 

@@ -1,0 +1,199 @@
+
+<tokenizedText>
+
+    <tok id = "1" POS =  "adverb" lemma =
+            "apoi">
+        Apoi
+    </tok>
+
+    <tok id = "2" POS =  "verb predicative" lemma =
+            "ieși">
+        ieși
+    </tok>
+
+    <tok id = "3" POS = "adverb" lemma = "repede">
+        repede
+    </tok>
+
+    <tok id = "4" POS = "adposition" lemma = "pe">pe
+    </tok>
+
+    <tok id = "5" POS = "noun common" lemma = "platformă">platformă
+    </tok>
+
+    <tok id = "6" POS = "adverb" lemma = "chiar">
+        chiar
+    </tok>
+
+    <tok id = "7" POS = "adverb" lemma = " în">
+        în
+    </tok>
+
+    <tok id = "8" POS  = "noun common" lemma = "clipa" >
+        clipa
+    </tok>
+
+    <tok id = "9" POS = "adverb" lemma = "când">
+        când
+    </tok>
+
+    <tok id = "10" POS = "pronoun reflexive" lemma = "se">
+        se
+    </tok>
+
+    <tok id = "11" POS = "verb predicative" lemma = "opri">
+        oprea
+    </tok>
+
+    <tok id = "12" POS = "noun common" lemma =  "tramvai">
+        tramvaiul
+    </tok>
+
+
+    <tok id = "13" POS = "adverb" lemma =  "coborând">
+        Coborând
+    </tok>
+
+    <tok id = "14" POS = "noun proper" lemma =  "Gavrilescu">
+        Gavrilescu
+    </tok>
+
+    <tok id = "15" POS = "verb predicative" lemma =  "regăsi">
+        regăsi
+    </tok>
+
+    <tok id = "16" POS = "noun common" lemma =  "arșița">
+        arșița
+    </tok>
+
+    <tok id = "17" POS = "conjunction coordinating" lemma =  "și">
+        și
+    </tok>
+
+    <tok id = "18" POS = "noun common" lemma =  "mirosul">
+        mirosul
+    </tok>
+
+    <tok id = "19" POS = "adposition" lemma
+            =  "de">
+        de
+    </tok>
+
+    <tok id = "20" POS = "noun common" lemma
+            =  "asfalt">
+        asfalt
+    </tok>
+
+    <tok id = "21" POS = "adjective" lemma
+            =  "topit">
+        topit
+    </tok>
+
+    <tok id = "22" POS = "verb predicative" lemma = "traversa">
+        Traversă
+    </tok>
+
+    <tok id = "23" POS = "adposition" lemma = "cu">
+        cu
+    </tok>
+
+
+    <tok id = "24" POS = "noun common" lemma = "greutate">
+        greutate
+    </tok>
+
+    <tok id = "25" POS = "noun common" lemma = "strada">
+        strada
+    </tok>
+
+    <tok id = "26" POS = "conjunction" lemma = "ca">
+        ca
+    </tok>
+
+    <tok id ="27" POS="particle conjunctive" lemma = "să">
+        să
+    </tok>
+
+
+    <tok id ="28" POS="verb predicativ" lemma = "aștepte">
+        aștepte
+    </tok>
+
+    <tok id ="29" POS="noun common" lemma = "tramvaiul">
+        tramvaiul
+    </tok>
+
+    <tok id ="30" POS="adposition" lemma = "spre">
+        spre
+    </tok>
+
+    <tok id ="31" POS="noun common" lemma = "direcția">
+        direcția
+    </tok>
+
+    <tok id ="32" POS="noun common" lemma = "opusă">
+        opusă
+    </tok>
+
+    <tok id ="33" POS="noun proper" lemma = "Gavrilescule">
+        Gavrilescule
+    </tok>
+
+
+    <tok id ="34" POS="verb predicative" lemma = "șopti">
+        șopti
+    </tok>
+
+    <tok id ="35" POS="noun common" lemma = "atenție">
+        atenție
+    </tok>
+
+    <tok id ="36" POS="conjunction" lemma = "că">
+        că
+    </tok>
+
+    <tok id ="37" POS="adverb" lemma = "parcă">
+        parcă
+    </tok>
+
+    <tok id ="38" POS="verb auxiliary" lemma = "avea">
+        ai
+    </tok>
+
+    <tok id ="39" POS="verb predicative" lemma = "începe">
+        începe
+    </tok>
+
+
+    <tok id ="40" POS="particle conjunctive" lemma = "să">
+        să
+    </tok>
+
+    <tok id ="41" POS="verb predicative" lemma = " îmbătrâni">
+        îmbătrânești
+    </tok>
+
+    <tok id ="42" POS="pronoun reflexive" lemma = "tu">
+        Te
+    </tok>
+
+    <tok id ="43" POS="verb predicative" lemma = "ramoli">
+        ramolești
+    </tok>
+
+    <tok id ="44" POS="pronoun personal" lemma = "tu">
+        îți
+    </tok>
+
+    <tok id ="45" POS="pronoun personal" lemma = "tu">
+        îți
+    </tok>
+
+    <tok id ="46" POS="verb predicative" lemma = "pierde">
+        pierzi
+    </tok>
+
+    <tok id ="47" POS="noun common" lemma = "memorie">
+        memoria
+    </tok>
+</tokenizedText>
