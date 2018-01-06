@@ -17,6 +17,12 @@ public class ApplicationMain
 		//String source      = args[0];
 		//String destination = args[1];
 		
+		// 	This tokenized text is organized as an xml document
+		// of the form <text>..tokens..</text> where tokens is a 
+		// sequence of <tok> tags. A <tok> tag has three atributes
+		// id, pos, and lem.
+		// pos = PartOfSpeech
+		// lem = Lemmatiser
 		TokenizedText tokenizedText = TextUtils.unmarshal();
 
 		//System.out.println(tokenizedText.toString());
@@ -26,11 +32,28 @@ public class ApplicationMain
                                     // testing marshall method
 		/**
 		 * Step 1. Noun Phrase Chunking
+		 * 	At this step, NounPharseChunker consumes a sequence
+		 * of <tok> elements and produces <np> elements
+		 * 
+		 * INFO: from what I see in the course, the tok tags get transformed
+		 * into np tags. The question is, do we need after this step the tok tags ?
+		 * INFO: we may also use the id atribute to link tok and np tags. I don't know
+		 * exactly
+		 * FIXME: (info) refactor the ChunkedText into NounPhraseChunkedText
+		 * 
 		 */
 		ChunkedText chunkedText = NounPharseChunker.chunk(tokenizedText);
 		
 		/**
 		 * Step 2. Name Entity Recognizer
+		 * 	At this step, extractNer method consumes a text and produces 
+		 * a sequence of <ne> elements.
+		 * 
+		 * INFO: maybe the input of it should be just the tokenizedText
+		 * 	given the fact that what it does is just a look-up in the gazeeteer.
+		 * If you use this option we will have an easyer life when doing the merge
+		 * because you can use the tok id for the ne id thus making things simpler in
+		 * the merge phase
 		 */
 		List<ChunkedText> chunkedTexts = extractNer(chunkedText);
 		
