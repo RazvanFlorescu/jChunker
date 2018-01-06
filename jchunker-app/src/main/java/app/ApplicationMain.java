@@ -1,8 +1,9 @@
 package app;
 
-import java.util.*;
+import java.util.List;
 
 import core.ChunkedText;
+import core.NameEntityText;
 import core.TokenizedText;
 import core.npc.NounPharseChunker;
 import utils.Merger;
@@ -55,19 +56,21 @@ public class ApplicationMain
 		 * because you can use the tok id for the ne id thus making things simpler in
 		 * the merge phase
 		 */
-		List<ChunkedText> chunkedTexts = extractNer(chunkedText);
+		List<NameEntityText> chunkedTexts = extractNer(tokenizedText);
 		
 		
 		/**
 		 * Step 3. Merge& Export results
+		 * 
+		 * well, given the above hints, maybe the 
 		 */
-		ChunkedText mergedText = Merger.merge(chunkedTexts);
+		//ChunkedText mergedText = Merger.merge(chunkedTexts);
 		
 		//TextUtils.marshal(destination, mergedText);
 		
 	}
 
-	private static List<ChunkedText> extractNer(ChunkedText chunkedText)
+	private static List<NameEntityText> extractNer(TokenizedText chunkedText)
 	{
 		// FIXME: (info) threadPool, cyclic barrier
 		return null;
