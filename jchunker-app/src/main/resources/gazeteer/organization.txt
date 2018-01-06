@@ -1,0 +1,215 @@
+Partidul Social Democrat:PSD
+Partidul Național Liberal:PNL
+Alianța Liberalilor și Democraților:ALDE
+Uniunea Salvați România:USR
+Uniunea Democrată Maghiară din România:UDMR
+Mișcarea Populară:MP
+Ministerul Afacerilor Interne:MAI
+Ministerul Afacerilor Externe:MAE
+Ministerul Apararii Nationale:M.Ap.N
+Alba:AB
+Argeș:AG
+Arad:AR
+București:B
+Bacău:BC
+Bihor:BH
+Bistrița-Năsăud:BN
+Brăila:BR
+Botoșani:BT
+Brașov:BV
+Buzău:BZ
+Cluj:CJ
+Călărași:CL
+Caraș-Severin:CS
+Constanța:CT
+Covasna:CV
+Dâmbovița:DB
+Dolj:DJ
+Gorj:GJ
+Galați:GL
+Giurgiu:GR
+Hunedoara:HD
+Harghita:HR
+Ilfov:IF
+Ialomița:IL
+Iași:IS
+Mehedinți:MH
+Maramureș:MM
+Mureș:MS
+Neamț:NT
+Olt:OT
+Prahova:PH
+Sibiu:SB
+Sălaj:SJ
+Satu Mare:SM
+Suceava:SV
+Tulcea:TL
+Timiș:TM
+Teleorman:TR
+Vâlcea:VL
+Vrancea:VN
+Vaslui:VS
+Uniunea Europeana:UE
+Organizația Națiunilor Unite:ONU
+Organizația Tratatului Atlanticului de Nord:NATO
+Fondul Internațional pentru Urgențe ale Copiilor al Națiunilor Unite:UNICEF
+Organizația Națiunilor Unite pentru Educație:UNESCO
+Control Automat Al Strălucirii:ABC
+Sistem de frânare antiblocant:ABS
+Control Cromatic Automat:ACC
+Distribuitor De Apel Automat:ACD
+Identificare De Automobil Automată:ACI
+Radar de Control de Apropiere:ACR
+Comisia de energie atomică americană:AEC
+Serviciu Fix Aeronautic:AFS
+Contract Colectiv de Muncă:CCM
+Direcția Cercetări Penale:DCP
+Direcția Sănătate Publică:DSP
+Direcția Generală a Vămilor:DGV
+Direcția Poliției de Frontieră:DPF
+Direcția Regională Vamală:DRV
+Inspectoratul Județean de Poliție:IJP
+Întreprinderea de Legume și Fructe:ILF
+Institutul de Medicină Legală:IML
+Întreprinderea Mecanică Roman:IMR
+Indicele Prețurilor de Consum:IPC
+Inspectoratului Școlar Județean:ISJ
+Inspectoratul pentru Situații de Urgență:ISU
+Neînceperea urmăririi penale:NUP
+Programul pentru Acționarii Salariați:PAS
+Punct de Trecere a Frontierei:PTF
+Plan Urbanistic Zonal:PUZ
+Regia Autonomă de Transport:RAT
+Societate de Administrare a Investițiilor:SAI
+Serviciul de Gospodărire a Apelor:SGA
+Secretariatul General al Guvernului:SGG
+Venit Minim Garantat:VMG
+Agenția Internațională pentru Energie Atomică:AIEA
+Administrația Asigurărilor de Stat:ADAS
+Consiliul General al Municipiului București:CGMB
+Consiliul Național de Soluționare a Contestațiilor:CNSC
+Consiliul Suprem de Apărare al Țării:CSAT
+Departamentul pentru Administrația Publică Locală:DAPL
+Direcția Generală de Informații a Apărării:DGIA
+Direcția Generală de Protecție și Anticorupție:DGPA
+Direcția Județeană de Drumuri și Poduri:DJDP
+Grupul Special de Protecție și Intervenție:GSPI
+Inspectoratul General al Poliției Române:IGPR
+Institutul Național de Cercetare-Dezvoltare:INCD
+Private Sector Adjustment Loan:PSAL
+Regia Autonomă de Transport București:RATB
+Regia Autonomă Județeană de Apă:RAJA
+Societate Comercială de Industrializarea Laptelui:SCIL
+Serviciul de Evidență Informatizată a Persoanei:SEIP
+Serviciul Independent pentru Protecție și Anticorupție:SIPA
+Serviciul de Poliție pentru Intervenție Rapidă:SPIR
+Statul Major al Forțelor Aeriene:SMFA
+Statului Major al Forțelor Navale:SMFN
+Statului Major al Forțelor Terestre:SMFT
+Uniunea Artiștilor Plastici din Republica Moldova:UAPM
+Unitatea Specială de Luptă Antiteroristă:USLA
+Asociația Județeană a Vânătorilor și Pescarilor Sportivi:AJVPS
+Biroul pentru Combaterea Crimei Organizate și Antidrog:BCCOA
+Brigada de Combatere a Crimei Organizate și a Corupției:BCCOC
+Direcția pentru Combaterea Criminalității Economico-Financiare:DCCEF
+Regia Autonomă Județeană de Apă Canal:RAJAC
+Serviciul de Combatere a Criminalității Economico-Financiare:SCCEF
+Direcția Generală de Pașapoarte, Străini și Probleme de Migrări:DGPSPM
+Direcția Generală de Contabilitate Publică și Trezoreria Statului:DGCPTS
+Antepriza de drumuri și Poduri:ADP
+Agenția română de impresariat artistic:ARIA
+Antepriza Șantiere Feroviare:ASF
+Antepriza Șantiere Generale:ASG
+Antepriza Șantiere Navale:ASN
+Baza de Aprovizionare Tehnico-Materială a Agriculturii:BATMA
+Baza Județeană de Aprovizionare Tehnico-Materială:BJATM
+Cooperativă Agricolă de Producție:CAP
+Uniunea Centrală a Cooperativelor de Consum:CENTROCOOP
+Combinatul de Prelucrare al Lemnului:CPL
+Consiliul Unic Agroindustrial de Stat și Coope­ratist:CUASC
+Direcția de transporturi poștale și mesagerie:DTPM
+Exploatarea Apă-Canal:EAC
+Editura didactică și pedagogică:EDP
+Exploatarea de Gospodărire Comunală și Locativă:EGCL
+Fabrica de memorii electronice și componente pentru tehnica de calcul:FMECTC
+Gospodărie Agricolă Colectivă:GAC
+Gospodărie Agricolă de Stat:GAS
+Gospodărie de stat:GOSTAT
+Intreprinderea Antrepriza Constructii Montaj Industriale:IACMI
+Întreprindere Agricolă de Stat:IAS
+Înteprindere de construcții aeronautice:ICA
+Înteprindere de construcții civile:ICC
+Înteprindere de construcții căi ferate:ICCF
+Caile Ferate Romane:CFR
+Întreprinderea de calculatoare electronice:ICE
+Întreprinderea de Comerț Exterior din subordinea Uniunii Centrale a Cooperativelor:ICECOOP
+Institutul de Cercetări și Modernizări Energetice:ICEMENERG
+Înteprindere de construcții forestiere:ICF
+Întreprinderea pentru colectarea legumelor și fructelor:ICLF
+Întreprinderea pentru colectarea și industrializarea laptelui:ICIL
+Întreprindere de construcții industriale și montaj:ICMI
+Întreprinderea de colectare a metalelor:ICM
+Institutul de cercetări și modernizări energetice:ICME
+Înteprinderea de combustibili nucleari:ICN
+Întreprinderea de celule prefabricate:ICP
+Întreprinderea de Comerț cu Ridicata pentru Produse Alimentare:ICRA
+Întreprinderea de Construcții, Reparații și Administrare Locativă:ICRAL
+Întreprinderea de Comerț și alimentație publică:ICSAAP
+Institutul de Cercetare Științifică și Inginerie Tehnologică pentru Mașini și Utilaje Agricole:ICSITMUA
+Intreprinderea Comerciala de Stat Marfuri Industriale:ICSMI
+Întreprindere de construcții tunele și poduri:ICTP
+Întreprinderea de Distribuție a Energiei Electrice București:IDEB
+Întreprinderea de drumuri și poduri:IDP
+Întreprinderea de electrocentrale:IEC
+Întreprinderea de electronică industrială:IEI
+Întreprinderea de aparate electronice de măsură și industriale:IEMI
+Întreprinderea de echipamente periferice:IEPER
+Întreprinderea de extracție petrol și gaze:IEPG
+Întreprinderea de Fabricat și Montaj Ascensoare:IFMA
+Întreprinderea de Gospodărire Comunală și Locativă:IGCL
+Întreprinderea de Gospodărire Orășenească:IGO
+Întreprinderea pentru întreținerea și repararea utilajelor de calcul și de electronică profesională:IIRUC
+Întreprinderea Județeană de Construcții și Montaj:IJCM
+Întreprinderea județeană de transport local:IJTL
+Întreprinderea de Legume și Fructe:ILF
+Institutul de Medicină și Farmacie:IMF
+Întreprinderea de mașini grele București:IMGB
+Întreprinderea de Morărit și Panificație:IMP
+Întreprinderea de prelucrare a aluminiului:IPA
+Întreprinderea de producție industrială - construcții căi ferate:IPICCF
+Întreprinderea de piese radio și semiconductori:IPRS
+Întreprinderii de Prestări și Servicii:IPS
+Întreprinderea de rețele electrice:IRE
+Întreprinderea de reparații locomotive:IRL
+Institutul de Studii și Proiectări Energetice:ISPE
+Întreprinderea de transport auto:ITA
+Întreprinderea de transport București:ITB
+Întreprinderea de Termoficații și Reparații Instalații Termice:ITRIT
+Întreprinderea de unelte și scule:IUS
+Întreprinderea de Utilaj Tehnologic:IUT
+Întreprinderea de vagoane Arad:IVA
+Oficiul Județean de Turism:OJT
+Oficiul Național de Turism:ONT
+Secția întreținere și reparații vagoane:SIRV
+Stațiunea de Mașini Agricole:SMA
+Stațiunea de Mașini și Tractoare:SMT
+Stație de utilaje și transport:SUT
+Trustul de construcții hidroenergetice:TCH
+Trustul de construcții industriale:TCI
+Trustul de construcții petroliere:TCP
+Trustul de foraj petrolier:TFP
+Trustul de petrol și gaze:TPG
+Trustul de utilaj greu:TUG
+Uzina de autocamioane Brașov:UAB
+Uzinele Comunale București:UCB
+Uniunea Centrală a Cooperativelor Mesteșugărești:UCECOM
+Uniunea Județeană a Cooperativelor de Consum și de Credit:UJCC
+Uniunea Județeană a Cooperativelor Meșteșugărești:UJCOM
+Uzina mecanică Timișoara:UMT
+Unitate de mecanizare și transport forestier:UMTF
+Uniunea Națională a C.A.P.:UNCAP
+Uzina de rulmenți Brașov:URB
+Uniunea Raională a C.A.P.:URCAP
+Uzina de reparații utilaj petrolier:URUP
+Uzina de tractoare Brașov:UTB
+Zavod Imeni Stalina:ZIS
