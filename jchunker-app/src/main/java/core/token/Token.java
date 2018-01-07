@@ -2,46 +2,74 @@ package core.token;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlSeeAlso;
+import javax.xml.bind.annotation.XmlValue;
 
 @XmlSeeAlso({core.token.TokenizedText.class})
-public class Token {
+public class Token 
+{
     private int id;
-    private String POS;
+    private String pos;
+    private String posTag;
     private String lemma;
+    private String word;
 
     public int getId() {
         return id;
     }
 
-    @XmlAttribute
+    @XmlAttribute(name="id")
     public void setId(int id) {
         this.id = id;
     }
 
-    public String getPOS() {
-        return POS;
+    public String getPOS() 
+    {
+        return pos;
     }
 
-    @XmlAttribute(name = "POS")
+    @XmlAttribute(name = "pos")
     public void setPOS(String POS) {
-        this.POS = POS;
+        this.pos = POS;
     }
 
     public String getLemma() {
         return lemma;
     }
 
-    @XmlAttribute
+    @XmlAttribute(name="lemma")
     public void setLemma(String lemma) {
         this.lemma = lemma;
+    }
+
+    public String getPosTag()
+    {
+    	return posTag;
+    }
+    
+    @XmlAttribute(name="posTag")
+    public void setPosTag(String posTag)
+    {
+    	this.posTag = posTag;
+    }
+    
+    public String getWord()
+    {
+    	return word;
+    }
+    
+    @XmlValue
+    public void setWord(String word)
+    {
+    	this.word = word;
     }
 
     @Override
     public String toString() {
         return "Token{" +
                 "id=" + id +
-                ", POS='" + POS + '\'' +
+                ", POS='" + pos + '\'' +
                 ", lemma='" + lemma + '\'' +
                 '}';
     }
+
 }

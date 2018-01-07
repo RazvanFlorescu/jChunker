@@ -1,5 +1,5 @@
 package core.token;
-import javax.xml.bind.annotation.XmlAttribute;
+
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSeeAlso;
@@ -12,12 +12,21 @@ import java.util.List;
 public class TokenizedText
 {
 
-
-    @XmlElement(name="tok")
     private List<Token> tokens;
 
     public TokenizedText(){
         tokens = new ArrayList<>();
+    }
+    
+    @XmlElement(name="tok")
+    public void setTokens(List<Token> tokens)
+    {
+    	this.tokens = tokens;
+    }
+
+    public List<Token> getTokens()
+    {
+    	return tokens;
     }
 
     @Override
@@ -26,4 +35,6 @@ public class TokenizedText
                 "tokens=" + tokens +
                 '}';
     }
+
+
 }
