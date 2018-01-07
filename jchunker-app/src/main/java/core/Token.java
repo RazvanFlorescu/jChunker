@@ -3,7 +3,7 @@ package core;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlSeeAlso;
 
-@XmlSeeAlso({core.TokenizedText.class})
+@XmlSeeAlso({core.text.TokenizedText.class})
 public class Token {
     private int id;
     private String POS;

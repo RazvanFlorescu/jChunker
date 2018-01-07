@@ -1,28 +1,32 @@
 package utils;
 
-import core.ChunkedText;
-import core.TokenizedText;
-
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+
+import core.NerText;
+import core.text.MergedText;
+import core.text.NounPharseChunkedText;
+import core.text.TokenizedText;
+
 import java.io.File;
+import java.util.List;
 
 public class TextUtils {
 
-	public static void marshal(String destination, ChunkedText chunkedText) {
+	public static void marshal(String destination, MergedText mergedText) {
 		try {
 
 			File file = new File(destination);
-			JAXBContext jaxbContext = JAXBContext.newInstance(ChunkedText.class);
+			JAXBContext jaxbContext = JAXBContext.newInstance(NounPharseChunkedText.class);
 			Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 
 			// output pretty printed
 			jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
-			jaxbMarshaller.marshal(chunkedText, file);
-			jaxbMarshaller.marshal(chunkedText, System.out);
+			jaxbMarshaller.marshal(mergedText, file);
+			jaxbMarshaller.marshal(mergedText, System.out);
 
 		} catch (JAXBException e) {
 			e.printStackTrace();
@@ -31,7 +35,7 @@ public class TextUtils {
 
 	}
 
-	public static TokenizedText unmarshal() {
+	public static TokenizedText unmarshal(String source) {
 		try {
 
 			File file = new File("src\\main\\resources\\inputFiles\\inputText.xml");
@@ -48,6 +52,19 @@ public class TextUtils {
 			return null;
 		}
 
+	}
+
+	public static MergedText merge(List<NerText> chunkedTexts, NounPharseChunkedText chunkedText)
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static MergedText merge(TokenizedText tokenizedText, NounPharseChunkedText chunkedText,
+			List<NerText> nerTexts)
+	{
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

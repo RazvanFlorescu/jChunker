@@ -1,12 +1,12 @@
 package core.npc;
 
-import core.ChunkedText;
-import core.TokenizedText;
+import core.text.NounPharseChunkedText;
+import core.text.TokenizedText;
 
 public class NounPharseChunker
 {
 
-	public static ChunkedText chunk(TokenizedText tokenizedText)
+	public static NounPharseChunkedText chunk(TokenizedText tokenizedText)
 	{
 		// TODO Auto-generated method stub
 		return null;

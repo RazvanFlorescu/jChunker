@@ -3,20 +3,16 @@ package core.ner;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.StringTokenizer;
 
-public class NerNameEntity
+public class NerPeopleNameEntity
 {
 	private String gazetteerPath;
 	
-	public NerNameEntity(String gazetteerPath){
+	public NerPeopleNameEntity(String gazetteerPath){
 		this.gazetteerPath=gazetteerPath;
 	}
 	
