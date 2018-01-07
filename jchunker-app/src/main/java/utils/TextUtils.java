@@ -5,21 +5,23 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
-import core.NerText;
+import core.ner.NerText;
+import core.npc.NounPhraseChunkedText;
 import core.text.MergedText;
-import core.text.NounPharseChunkedText;
-import core.text.TokenizedText;
+import core.token.TokenizedText;
 
 import java.io.File;
 import java.util.List;
 
 public class TextUtils {
 
+	private TextUtils() {}
+	
 	public static void marshal(String destination, MergedText mergedText) {
 		try {
 
 			File file = new File(destination);
-			JAXBContext jaxbContext = JAXBContext.newInstance(NounPharseChunkedText.class);
+			JAXBContext jaxbContext = JAXBContext.newInstance(NounPhraseChunkedText.class);
 			Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 
 			// output pretty printed
@@ -54,16 +56,9 @@ public class TextUtils {
 
 	}
 
-	public static MergedText merge(List<NerText> chunkedTexts, NounPharseChunkedText chunkedText)
-	{
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public static MergedText merge(TokenizedText tokenizedText, NounPharseChunkedText chunkedText,
+	public static MergedText merge(TokenizedText tokenizedText, NounPhraseChunkedText chunkedText,
 			List<NerText> nerTexts)
 	{
-		// TODO Auto-generated method stub
 		return null;
 	}
 

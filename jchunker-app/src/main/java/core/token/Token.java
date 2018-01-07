@@ -1,9 +1,9 @@
-package core;
+package core.token;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlSeeAlso;
 
-@XmlSeeAlso({core.text.TokenizedText.class})
+@XmlSeeAlso({core.token.TokenizedText.class})
 public class Token {
     private int id;
     private String POS;

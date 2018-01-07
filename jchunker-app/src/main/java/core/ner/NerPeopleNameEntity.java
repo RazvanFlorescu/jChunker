@@ -8,7 +8,9 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NerPeopleNameEntity
+import core.token.Token;
+
+public class NerPeopleNameEntity implements Recognizer
 {
 	private String gazetteerPath;
 	
@@ -77,6 +79,13 @@ public class NerPeopleNameEntity
 
 	   
     return finalString.toString();
+	}
+
+	@Override
+	public NameEntity recognize(Token token)
+	{
+		// TODO Auto-generated method stub
+		return null;
 	}
    
 }
