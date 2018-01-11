@@ -48,7 +48,7 @@ public class TextUtilsTest {
 		
 		//then
 		TokenizedText tokText = textUtils.unmarshal("src\\main\\resources\\inputFiles\\inputText.xml");
-		assertThat(tokText.getTokens().get(1).getId()).isEqualTo(2);
+		assertThat(tokText.getTokens().get(1).getId()).isEqualTo("2");
 		assertThat(tokText.getTokens().get(1).getLemma()).isEqualTo("ieși");
 		
 	}
@@ -58,13 +58,13 @@ public class TextUtilsTest {
 		Token token1 = new Token();
 		Token token2 = new Token();
 		
-		token1.setId(1);
+		token1.setId("1");
 		token1.setLemma("apoi");
-		token1.setPOS("adverb");
+		token1.setpartOfSpeech("adverb");
 		
-		token2.setId(2);
+		token2.setId("2");
 		token2.setLemma("ieși");
-		token2.setPOS("verb predicative");
+		token2.setpartOfSpeech("verb predicative");
 		
 		tokens.add(token1);
 		tokens.add(token2);

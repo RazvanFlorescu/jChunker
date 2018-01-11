@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import core.Shared.MergedEntity;
 import core.token.Token;
 
 public class NerPeopleNameEntity implements Recognizer

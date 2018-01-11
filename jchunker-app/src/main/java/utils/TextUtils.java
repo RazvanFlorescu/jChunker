@@ -5,9 +5,12 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
+import core.ner.NameEntity;
 import core.ner.NerText;
+import core.npc.NounPhrase;
 import core.npc.NounPhraseChunkedText;
 import core.text.MergedText;
+import core.token.Token;
 import core.token.TokenizedText;
 
 import java.io.File;
@@ -21,7 +24,7 @@ public class TextUtils {
 		try {
 
 			File file = new File(destination);
-			JAXBContext jaxbContext = JAXBContext.newInstance(NounPhraseChunkedText.class);
+			JAXBContext jaxbContext = JAXBContext.newInstance(MergedText.class);
 			Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 
 			// output pretty printed
@@ -40,7 +43,7 @@ public class TextUtils {
 	public static TokenizedText unmarshal(String source) {
 		try {
 
-			File file = new File("src\\main\\resources\\inputFiles\\inputText.xml");
+			File file = new File(source);
 			JAXBContext jaxbContext = JAXBContext.newInstance(TokenizedText.class);
 
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
@@ -59,7 +62,21 @@ public class TextUtils {
 	public static MergedText merge(TokenizedText tokenizedText, NounPhraseChunkedText chunkedText,
 			List<NerText> nerTexts)
 	{
-		return null;
+		MergedText mergedText = new MergedText();
+		for(Token token : tokenizedText.getTokens()){
+			NounPhrase nP = GeneralUtils.getNpcByTokenId(chunkedText,token.getId());
+			List<NameEntity> ners = GeneralUtils.getNersByTokenId(nerTexts,token.getId());
+			mergedText.getOutputList().add(token);
+			if(nP != null){
+				mergedText.getOutputList().add(nP);
+			}
+			if(ners!=null){
+				for(NameEntity ner : ners){
+					mergedText.getOutputList().add(ner);
+				}
+			}
+		}
+		return mergedText;
 	}
 
 }

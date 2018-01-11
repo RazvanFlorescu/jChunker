@@ -1,8 +1,14 @@
 package core.npc;
 
-import javax.xml.bind.annotation.XmlAttribute;
+import core.Shared.MergedEntity;
 
-public class NounPhrase
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlMixed;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlValue;
+
+@XmlRootElement(name = "nounPhrase")
+public class NounPhrase extends MergedEntity
 {
 	private static final String LIST_DELIMITER = ",";
 	private String tokenId 	= "";	// reprezinta id-ul token-ului principal (substantivul)
@@ -12,7 +18,17 @@ public class NounPhrase
 	{
 		return tokenId;
 	}
-	
+	private String content;
+	public String getContent()
+	{
+		return content;
+	}
+
+	@XmlValue
+	public void setContent(String word)
+	{
+		this.content = word;
+	}
 	@XmlAttribute(name="tokenId")
 	public void setTokenId(String tokenId)
 	{

@@ -3,9 +3,10 @@ package core.ner;
 import java.io.File;
 import java.io.IOException;
 
+import core.Shared.MergedEntity;
 import core.token.Token;
 
-public class NerTimeEntity implements Recognizer
+public class NerTimeEntity  implements Recognizer
 {
 	private File gazeteerFile;
 	

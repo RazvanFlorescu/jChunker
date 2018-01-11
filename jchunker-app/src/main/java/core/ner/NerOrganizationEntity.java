@@ -1,8 +1,9 @@
 package core.ner;
 
+import core.Shared.MergedEntity;
 import core.token.Token;
 
-public class NerOrganizationEntity implements Recognizer
+public class NerOrganizationEntity  implements Recognizer
 {
 
 	@Override
