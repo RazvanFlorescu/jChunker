@@ -1,30 +1,43 @@
 package core.ner;
 
-import core.Shared.MergedEntity;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlValue;
 
-import javax.xml.bind.annotation.*;
-
-@XmlRootElement(name = "nameEntity")
-public class NameEntity  extends MergedEntity
+public class NameEntity
 {
-	private String tokenId;
+	//idToken,type
+	
+	private int id;
+	private String type;
+	private String word;
+	
+	public String getWord() {
+		return word;
+	}
+    
+	@XmlValue
+	public void setWord(String word) {
+		this.word = word;
+	}
 
-    public String getTokenId() {
-        return tokenId;
-    }
-    private String content;
-    public String getContent()
-    {
-        return content;
-    }
+	public int getId() {
+		return id;
+	}
+	
+	@XmlAttribute(name="id")
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public String getType() {
+		return type;
+	}
+	
+	@XmlAttribute(name="type")
+	public void setType(String type) {
+		this.type = type;
+	}
+	
 
-    @XmlValue
-    public void setContent(String word)
-    {
-        this.content = word;
-    }
-    @XmlAttribute(name = "tokenId")
-    public void setTokenId(String tokenId) {
-        this.tokenId = tokenId;
-    }
+	
 }
