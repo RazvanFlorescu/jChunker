@@ -2,21 +2,24 @@ package core.ner;
 
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import core.Shared.MergedEntity;
 import core.token.Token;
 
 public class NerPeopleNameEntity implements Recognizer
 {
-	private String gazetteerPath;
+    private File gazeteerFile;
 	
-	public NerPeopleNameEntity(String gazetteerPath){
-		this.gazetteerPath=gazetteerPath;
+	public NerPeopleNameEntity(String gazeteerPath) throws IOException
+	{
+		this.gazeteerFile = new File(gazeteerPath);
+		if(!this.gazeteerFile.canRead())
+			throw new IOException("Cannot read file : " + gazeteerPath);
 	}
 	
 	public String textTokenization(String text) throws IOException{
@@ -39,7 +42,7 @@ public class NerPeopleNameEntity implements Recognizer
 			    count++;
 		   }
     	   
-    	   try(BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(gazetteerPath), "UTF-8"));) 
+    	   try(BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(gazeteerFile.getAbsolutePath()), "UTF-8"));) 
     	   {
 	           StringBuilder sb = new StringBuilder();
 		       String line = br.readLine();
@@ -85,9 +88,29 @@ public class NerPeopleNameEntity implements Recognizer
 	@Override
 	public NameEntity recognize(Token token)
 	{
-		// TODO Auto-generated method stub
-		return null;
+		   NameEntity resultExpectation = new NameEntity();
+		   resultExpectation.setId(token.getId());
+		   resultExpectation.setType("peopleName");
+		   resultExpectation.setWord(token.getWord());
+		   
+		   try(BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(gazeteerFile.getAbsolutePath()), "UTF-8"));){
+			   String line = br.readLine();
+			   while(line!=null){
+				   if(line.contains(token.getWord()) && line.replace(" ","").length()== token.getWord().replace(" ","").length()){
+					   return resultExpectation;
+				   }
+				   line=br.readLine();
+			   }
+			   
+		   } catch (IOException x) {
+			    System.err.format("IOException: %s%n", x);
+		   }
+	   		
+			
+			return null;
+		}
+
 	}
    
-}
+
 
