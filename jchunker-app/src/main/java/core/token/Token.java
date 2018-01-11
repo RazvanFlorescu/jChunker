@@ -6,7 +6,7 @@ import core.Shared.MergedEntity;
 import javax.xml.bind.annotation.*;
 
 @XmlSeeAlso({core.token.TokenizedText.class})
-@XmlRootElement(name = "tok")
+@XmlRootElement(name = "token")
 public class Token extends MergedEntity
 {
     private String id;
