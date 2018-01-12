@@ -2,9 +2,10 @@ package core.npc;
 
 import javax.xml.bind.annotation.XmlAttribute;
 
+import core.Shared.MergedEntity;
 import core.token.Token;
 
-public class NounPhrase
+public class NounPhrase extends MergedEntity
 {
 	private static final String LIST_DELIMITER = ",";
 	private int tokenId;			// reprezinta id-ul token-ului principal (substantivul)
