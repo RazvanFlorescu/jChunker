@@ -3,7 +3,9 @@ package core.ner;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlValue;
 
-public class NameEntity
+import core.Shared.MergedEntity;
+
+public class NameEntity extends MergedEntity
 {
 	//idToken,type
 	

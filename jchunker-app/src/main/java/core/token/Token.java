@@ -4,8 +4,10 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlValue;
 
+import core.Shared.MergedEntity;
+
 @XmlSeeAlso({core.token.TokenizedText.class})
-public class Token 
+public class Token extends MergedEntity
 {
     private int id;
     private String pos;

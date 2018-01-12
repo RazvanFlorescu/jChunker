@@ -68,20 +68,20 @@ public class GeneralUtils {
         return destination;
     }
 
-    public static NounPhrase getNpcByTokenId(NounPhraseChunkedText nounPhraseChunkedText, String tokenId){
+    public static NounPhrase getNpcByTokenId(NounPhraseChunkedText nounPhraseChunkedText, int tokenId){
         for(NounPhrase nP : nounPhraseChunkedText.getNounPhraseList()){
-            if (nP.getTokenId().equals(tokenId)){
+            if (nP.getTokenId() == tokenId){
                 return nP;
             }
         }
         return null;
     }
 
-    public static List<NameEntity> getNersByTokenId(List<NerText> nerTexts, String tokenId){
+    public static List<NameEntity> getNersByTokenId(List<NerText> nerTexts, int tokenId){
         List<NameEntity> nameEntitiesResult = new ArrayList<NameEntity>() ;
         for(NerText nerText : nerTexts){
             for(NameEntity nE : nerText.getNameEntities()){
-                if(nE.getTokenId().equals(tokenId)){
+                if(nE.getId() == tokenId){
                     nameEntitiesResult.add(nE);
                 }
             }
