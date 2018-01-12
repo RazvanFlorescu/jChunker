@@ -40,7 +40,7 @@ public class TextUtils {
 	public static TokenizedText unmarshal(String source) {
 		try {
 
-			File file = new File("src\\main\\resources\\inputFiles\\inputText.xml");
+			File file = new File(source);
 			JAXBContext jaxbContext = JAXBContext.newInstance(TokenizedText.class);
 
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();

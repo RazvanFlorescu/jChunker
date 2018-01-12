@@ -1,0 +1,6 @@
+(pattern (sequence "1:NC.PRY 2:NCFSOY (AFPFSON SPSA NCMS.N){1}") (rel_name sbj))
+(pattern (sequence "(DI3..R.){1} 2:NCFSRN 1:AFPFSRN (PUNCT SPCA NCMSRY){1}") (rel_name sbj))
+(pattern (sequence "(NCFP.N)? 2:NCFSRY 1:AFPFSRN (PUNCT SPSA NCFSRN){1}") (rel_name sbj))
+(pattern (sequence "1:NCMS.N (RGP){1} 2:PP3MSR. (SPSA NCMSRY NCMSOY){1}") (rel_name sbj))
+(pattern (sequence "(TDFPR RP AFPFP.N){1} 2:NCFP.N (SPSA NCFSRY DS1FSRP){1} 1:AFPFSRN (PD3FPR){1}") (rel_name sbj))
+(pattern (sequence "(NCFSRY){1} 1:AFPFSRN (RGP){1} 2:NCFPRY (AFPFP.N){1}") (rel_name sbj))

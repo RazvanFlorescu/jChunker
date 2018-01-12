@@ -46,7 +46,7 @@ public class Token
     	return posTag;
     }
     
-    @XmlAttribute(name="posTag")
+    @XmlAttribute(name="partOfSpeechTag")
     public void setPosTag(String posTag)
     {
     	this.posTag = posTag;
@@ -69,6 +69,7 @@ public class Token
                 "id=" + id +
                 ", POS='" + pos + '\'' +
                 ", lemma='" + lemma + '\'' +
+                ", posTag='" + posTag + '\'' +
                 '}';
     }
 

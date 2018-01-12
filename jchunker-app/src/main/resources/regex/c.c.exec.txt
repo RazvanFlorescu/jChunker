@@ -1,0 +1,1 @@
+(pattern (sequence "(DI3..R. NCFSRN){1} 1:AFPFSRN (PUNCT){1} 2:SPCA (NCMSRY){1}") (rel_name c.c.exc))
