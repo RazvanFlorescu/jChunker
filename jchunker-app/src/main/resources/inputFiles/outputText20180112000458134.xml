@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<text>
+    <tok id="1" lemma="apoi" partOfSpeech="adverb">
+        Apoi
+    </tok>
+    <nounPhrase idList="1" tokenId="1">plm</nounPhrase>
+    <nameEntity tokenId="1">asda</nameEntity>
+    <tok id="2" lemma="ieși" partOfSpeech="verb predicative">
+        ieși
+    </tok>
+    <nounPhrase idList="3" tokenId="2">plm2</nounPhrase>
+    <nameEntity tokenId="2">asda</nameEntity>
+    <tok id="3" lemma="repede" partOfSpeech="adverb">
+        repede
+    </tok>
+    <tok id="4" lemma="pe" partOfSpeech="adpartOfSpeechition">pe
+    </tok>
+    <tok id="5" lemma="platformă" partOfSpeech="noun common">platformă
+    </tok>
+    <nounPhrase idList="3" tokenId="5">plm3</nounPhrase>
+    <nameEntity tokenId="5">asda</nameEntity>
+    <nameEntity tokenId="5">asda</nameEntity>
+    <tok id="6" lemma="chiar" partOfSpeech="adverb">
+        chiar
+    </tok>
+    <tok id="7" lemma=" în" partOfSpeech="adverb">
+        în
+    </tok>
+    <tok id="8" lemma="clipa" partOfSpeech="noun common">
+        clipa
+    </tok>
+    <tok id="9" lemma="când" partOfSpeech="adverb">
+        când
+    </tok>
+    <tok id="10" lemma="se" partOfSpeech="pronoun reflexive">
+        se
+    </tok>
+    <tok id="11" lemma="opri" partOfSpeech="verb predicative">
+        oprea
+    </tok>
+    <tok id="12" lemma="tramvai" partOfSpeech="noun common">
+        tramvaiul
+    </tok>
+    <tok id="13" lemma="coborând" partOfSpeech="adverb">
+        Coborând
+    </tok>
+    <tok id="14" lemma="Gavrilescu" partOfSpeech="noun proper">
+        Gavrilescu
+    </tok>
+    <tok id="15" lemma="regăsi" partOfSpeech="verb predicative">
+        regăsi
+    </tok>
+    <tok id="16" lemma="arșița" partOfSpeech="noun common">
+        arșița
+    </tok>
+    <tok id="17" lemma="și" partOfSpeech="conjunction coordinating">
+        și
+    </tok>
+    <tok id="18" lemma="mirosul" partOfSpeech="noun common">
+        mirosul
+    </tok>
+    <tok id="19" lemma="de" partOfSpeech="adpartOfSpeechition">
+        de
+    </tok>
+    <tok id="20" lemma="asfalt" partOfSpeech="noun common">
+        asfalt
+    </tok>
+    <tok id="21" lemma="topit" partOfSpeech="adjective">
+        topit
+    </tok>
+    <tok id="22" lemma="traversa" partOfSpeech="verb predicative">
+        Traversă
+    </tok>
+    <tok id="23" lemma="cu" partOfSpeech="adpartOfSpeechition">
+        cu
+    </tok>
+    <tok id="24" lemma="greutate" partOfSpeech="noun common">
+        greutate
+    </tok>
+    <tok id="25" lemma="strada" partOfSpeech="noun common">
+        strada
+    </tok>
+    <tok id="26" lemma="ca" partOfSpeech="conjunction">
+        ca
+    </tok>
+    <tok id="27" lemma="să" partOfSpeech="particle conjunctive">
+        să
+    </tok>
+    <tok id="28" lemma="aștepte" partOfSpeech="verb predicativ">
+        aștepte
+    </tok>
+    <tok id="29" lemma="tramvaiul" partOfSpeech="noun common">
+        tramvaiul
+    </tok>
+    <tok id="30" lemma="spre" partOfSpeech="adpartOfSpeechition">
+        spre
+    </tok>
+    <tok id="31" lemma="direcția" partOfSpeech="noun common">
+        direcția
+    </tok>
+    <tok id="32" lemma="opusă" partOfSpeech="noun common">
+        opusă
+    </tok>
+    <tok id="33" lemma="Gavrilescule" partOfSpeech="noun proper">
+        Gavrilescule
+    </tok>
+    <tok id="34" lemma="șopti" partOfSpeech="verb predicative">
+        șopti
+    </tok>
+    <tok id="35" lemma="atenție" partOfSpeech="noun common">
+        atenție
+    </tok>
+    <tok id="36" lemma="că" partOfSpeech="conjunction">
+        că
+    </tok>
+    <tok id="37" lemma="parcă" partOfSpeech="adverb">
+        parcă
+    </tok>
+    <tok id="38" lemma="avea" partOfSpeech="verb auxiliary">
+        ai
+    </tok>
+    <tok id="39" lemma="începe" partOfSpeech="verb predicative">
+        începe
+    </tok>
+    <tok id="40" lemma="să" partOfSpeech="particle conjunctive">
+        să
+    </tok>
+    <tok id="41" lemma=" îmbătrâni" partOfSpeech="verb predicative">
+        îmbătrânești
+    </tok>
+    <tok id="42" lemma="tu" partOfSpeech="pronoun reflexive">
+        Te
+    </tok>
+    <tok id="43" lemma="ramoli" partOfSpeech="verb predicative">
+        ramolești
+    </tok>
+    <tok id="44" lemma="tu" partOfSpeech="pronoun personal">
+        îți
+    </tok>
+    <tok id="45" lemma="tu" partOfSpeech="pronoun personal">
+        îți
+    </tok>
+    <tok id="46" lemma="pierde" partOfSpeech="verb predicative">
+        pierzi
+    </tok>
+    <tok id="47" lemma="memorie" partOfSpeech="noun common">
+        memoria
+    </tok>
+</text>

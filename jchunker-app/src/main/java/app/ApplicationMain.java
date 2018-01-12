@@ -1,8 +1,8 @@
 package app;
 
-import java.io.IOException;
 import java.util.List;
 
+import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 
 import core.ner.NerExtractor;
@@ -11,10 +11,12 @@ import core.npc.NounPhraseChunkedText;
 import core.npc.NounPhraseChunker;
 import core.text.MergedText;
 import core.token.TokenizedText;
+import utils.GeneralUtils;
 import utils.TextUtils;
 
 public class ApplicationMain
 {
+
 	public static final Logger logger = Logger.getLogger(ApplicationMain.class);
 
 	public static void main(String[] args)
@@ -33,9 +35,20 @@ public class ApplicationMain
 		// foloseste LOGGER !!! nu printa exceptiile !
 		// logheaza orice informatie utila pe masura ce aplicatia merge.. e o regula generala
 		// fa-ti o clasa noua, GeneralUtils ceva de genu in care sa ai metode statice... nu uita sa faci constructorul privat fdc e clasa utilitara
+		BasicConfigurator.configure();
+		if(args.length != 2){
+			logger.error("Error : wrong number of arguments from command line! ");
+			System.exit(0);
+		}
+
 		String source      = args[0];
 		String destination = args[1];
 
+
+		GeneralUtils.validateInputPath(source);
+		GeneralUtils.validateOutputPath(destination);
+		destination = GeneralUtils.outputPathGenerator(destination);
+		System.out.print(destination);
 		/**
 		 * TokenizedText will contain a list of Tokens
 		 * Token is a JAXB annotated class with the 
@@ -68,7 +81,7 @@ public class ApplicationMain
 		 */
 		NerExtractor  nerExtractor = null;
 		List<NerText> nerTexts     = null;
-		try
+		/*try
 		{
 			nerExtractor = new NerExtractor();
 			nerTexts     = nerExtractor.extract(tokenizedText);
@@ -77,7 +90,7 @@ public class ApplicationMain
 			logger.error("Step 2. Failed !", e);
 			System.exit(1);
 		}
-		
+		*/
 		
 		/**
 		 * Step 3. Merge& Export
@@ -86,8 +99,57 @@ public class ApplicationMain
 		 * marshaled in xml form.
 		 * 
 		 */
+	/*	chunkedText = new NounPhraseChunkedText();
+		NounPhrase nP = new NounPhrase();
+		nP.setTokenId("1");
+		nP.setIdList("1");
+		nP.setContent("plm");
+
+		chunkedText.getNounPhraseList().add(nP);
+
+		nP = new NounPhrase();
+		nP.setTokenId("2");
+		nP.setIdList("3");
+		nP.setContent("plm2");
+		chunkedText.getNounPhraseList().add(nP);
+
+		nP = new NounPhrase();
+		nP.setTokenId("5");
+		nP.setIdList("3");
+		nP.setContent("plm3");
+		chunkedText.getNounPhraseList().add(nP);
+
+		NerText nT= new NerText();
+		NameEntity nE = new NameEntity();
+		nE.setTokenId("1");
+		nE.setContent("asda");
+		nT.getNameEntities().add(nE);
+
+		 nE = new NameEntity();
+		nE.setTokenId("2");
+		nE.setContent("asda");
+		nT.getNameEntities().add(nE);
+
+		nE = new NameEntity();
+		NerText nT2 = new NerText();
+		nE.setTokenId("5");
+		nE.setContent("asda");
+		nT2.getNameEntities().add(nE);
+
+		nE = new NameEntity();
+		NerText nT3 = new NerText();
+		nE.setTokenId("5");
+		nE.setContent("asda");
+		nT3.getNameEntities().add(nE);
+
+		nE = new NameEntity();
+		nerTexts = new ArrayList<NerText>();
+		nerTexts.add(nT);
+		nerTexts.add(nT2);
+		nerTexts.add(nT3);
+		*/  // user to test TextUtils.merge method
 		MergedText mergedText = TextUtils.merge(tokenizedText, chunkedText, nerTexts);
-		
+
 		TextUtils.marshal(destination, mergedText);
 		
 	}

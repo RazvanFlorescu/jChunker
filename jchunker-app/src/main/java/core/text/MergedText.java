@@ -1,63 +1,46 @@
 package core.text;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import core.Shared.MergedEntity;
 import core.ner.NameEntity;
 import core.npc.NounPhrase;
 import core.token.Token;
 
+import javax.xml.bind.annotation.*;
+
+@XmlSeeAlso({MergedEntity.class , Token.class, NounPhrase.class, NameEntity.class})
+@XmlRootElement(name = "text")
+@XmlAccessorType(XmlAccessType.PROPERTY)
 public class MergedText
 {
 	
-	public MergedText()
-	{
-		
+
+	public MergedText(){
+		outputList = new ArrayList<>();
 	}
-	
 	/**
 	 * 
 	 */
-	private List<List<NameEntity>> nerLists;
-	
 	/**
 	 * 
 	 */
-	private List<Token> tokens;
-	
+
 	/**
 	 * 
 	 */
-	private List<NounPhrase> nounPhrases;
-	
-	
-	public List<List<NameEntity>> getNerLists()
-	{
-		return nerLists;
+
+	public List<MergedEntity> outputList;
+
+
+	public List<MergedEntity> getOutputList() {
+		return this.outputList;
 	}
 
-	public void setNerLists(List<List<NameEntity>> nerLists)
-	{
-		this.nerLists = nerLists;
-	}
-
-	public List<Token> getTokens()
-	{
-		return tokens;
-	}
-
-	public void setTokens(List<Token> tokens)
-	{
-		this.tokens = tokens;
-	}
-
-	public List<NounPhrase> getNounPhrases()
-	{
-		return nounPhrases;
-	}
-
-	public void setNounPhrases(List<NounPhrase> nounPhrases)
-	{
-		this.nounPhrases = nounPhrases;
+	@XmlAnyElement(lax=true)
+	public void setOutputList(List<MergedEntity> outputList) {
+		this.outputList = outputList;
 	}
 
 }
