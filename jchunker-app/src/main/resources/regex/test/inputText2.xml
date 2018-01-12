@@ -1,0 +1,77 @@
+<text>
+	<token  pos="prep."  id="1" lemma="întru" partOfSpeechTag="Spsay">Într-</token>
+	<token  pos="det."  id="2" lemma="un" partOfSpeechTag="Tifsr">o</token>
+	<token  pos="c.c.t."  id="3" lemma="zi" partOfSpeechTag="Ncfsrn">zi</token>
+	<token  pos="a.adj."  id="4" lemma="senin" partOfSpeechTag="Afpfsrn">senină</token>
+	<token  pos="coord."  id="5" lemma="şi" partOfSpeechTag="Crssp">şi</token>
+	<token  pos="coord."  id="6" lemma="friguros" partOfSpeechTag="Afpfsrn">friguroasă</token>
+	<token  pos="a.subst."  id="7" lemma="de" partOfSpeechTag="Spsa">de</token>
+	<token  pos="prep."  id="8" lemma="aprilie" partOfSpeechTag="Ncms-n">aprilie</token>
+	<token  pos="punct."  id="9" lemma="," partOfSpeechTag="punct">,</token>
+	<token  pos="c.c.t."  id="10" lemma="pe_când" partOfSpeechTag="Cscsp">pe când</token>
+	<token  pos="sbj."  id="11" lemma="ceas" partOfSpeechTag="Ncfpry">ceasurile</token>
+	<token  pos="subord."  id="12" lemma="bate" partOfSpeechTag="Vmii3p">băteau</token>
+	<token  pos="c.d."  id="13" lemma="oră" partOfSpeechTag="Ncfsry">ora</token>
+	<token  pos="a.adj."  id="14" lemma="treisprezece" partOfSpeechTag="Mc-p-l">treisprezece</token>
+	<token  pos="punct."  id="15" lemma="," partOfSpeechTag="punct">,</token>
+	<token  pos="sbj."  id="16" lemma="Winston" partOfSpeechTag="Np">Winston</token>
+	<token  pos="a.subst."  id="17" lemma="Smith" partOfSpeechTag="Np">Smith</token>
+	<token  pos="sbj."  id="18" lemma="," partOfSpeechTag="punct">,</token>
+	<token  pos="c.c.m."  id="19" lemma="cu" partOfSpeechTag="Spsa">cu</token>
+	<token  pos="prep."  id="20" lemma="bărbie" partOfSpeechTag="Ncfsry">bărbia</token>
+	<token  pos="a.adj."  id="21" lemma="înfundat" partOfSpeechTag="Afpfsrn">înfundată</token>
+	<token  pos="c.c.l."  id="22" lemma="în" partOfSpeechTag="Spsa">în</token>
+	<token  pos="prep."  id="23" lemma="piept" partOfSpeechTag="Ncms-n">piept</token>
+	<token  pos="c.c.scop"  id="24" lemma="pentru" partOfSpeechTag="Spsa">pentru</token>
+	<token  pos="part."  id="25" lemma="a" partOfSpeechTag="Qn">a</token>
+	<token  pos="prep."  id="26" lemma="scăpa" partOfSpeechTag="Vmnp">scăpa</token>
+	<token  pos="c.i."  id="27" lemma="de" partOfSpeechTag="Spsa">de</token>
+	<token  pos="prep."  id="28" lemma="vânt" partOfSpeechTag="Ncmsry">vântul</token>
+	<token  pos="a.vb."  id="29" lemma="care" partOfSpeechTag="Pw3--r">care</token>
+	<token  pos="c.d."  id="30" lemma="el" partOfSpeechTag="Pp3msa--y-----w">-l</token>
+	<token  pos="coord."  id="31" lemma="lua" partOfSpeechTag="Vmii3s">lua</token>
+	<token  pos="c.c.l."  id="32" lemma="pe" partOfSpeechTag="Spsa">pe</token>
+	<token  pos="prep."  id="33" lemma="sus" partOfSpeechTag="Rgp">sus</token>
+	<token  pos="punct."  id="34" lemma="," partOfSpeechTag="punct">,</token>
+	<token  pos="refl."  id="35" lemma="sine" partOfSpeechTag="Px3--a--------w">se</token>
+	<token   id="36" lemma="strecura" partOfSpeechTag="Vmis3s">strecură</token>
+	<token  pos="c.c.m."  id="37" lemma="iute" partOfSpeechTag="Rgp">iute</token>
+	<token  pos="c.c.l."  id="38" lemma="prin" partOfSpeechTag="Spsa">prin</token>
+	<token  pos="prep."  id="39" lemma="uşă" partOfSpeechTag="Ncfpry">uşile</token>
+	<token  pos="a.subst."  id="40" lemma="de" partOfSpeechTag="Spsa">de</token>
+	<token  pos="prep."  id="41" lemma="sticlă" partOfSpeechTag="Ncfsrn">sticlă</token>
+	<token  pos="det."  id="42" lemma="al" partOfSpeechTag="Tsfp">ale</token>
+	<token  pos="a.subst."  id="43" lemma="bloc" partOfSpeechTag="Ncmsoy">Blocului</token>
+	<token  pos="a.subst."  id="44" lemma="victorie" partOfSpeechTag="Ncfsry">Victoria</token>
+	<token  pos="punct."  id="45" lemma="," partOfSpeechTag="punct">,</token>
+	<token  pos="c.c.conc."  id="46" lemma="deşi" partOfSpeechTag="Csssp">deşi</token>
+	<token  pos="neg."  id="47" lemma="nu" partOfSpeechTag="Qz">nu</token>
+	<token  pos="prep."  id="48" lemma="destul" partOfSpeechTag="Rgp">destul</token>
+	<token  pos="comp."  id="49" lemma="de" partOfSpeechTag="Spsa">de</token>
+	<token  pos="c.c.m."  id="50" lemma="repede" partOfSpeechTag="Rgp">repede</token>
+	<token  pos="c.c.cons."  id="51" lemma="pentru" partOfSpeechTag="Spsa">pentru</token>
+	<token  pos="part."  id="52" lemma="a" partOfSpeechTag="Qn">a</token>
+	<token  pos="prep."  id="53" lemma="împiedica" partOfSpeechTag="Vmnp">împiedica</token>
+	<token  pos="det."  id="54" lemma="un" partOfSpeechTag="Timsr">un</token>
+	<token  pos="c.d."  id="55" lemma="vârtej" partOfSpeechTag="Ncms-n">vârtej</token>
+	<token  pos="a.subst."  id="56" lemma="de" partOfSpeechTag="Spsa">de</token>
+	<token  pos="prep."  id="57" lemma="praf" partOfSpeechTag="Ncms-n">praf</token>
+	<token  pos="coord."  id="58" lemma="şi" partOfSpeechTag="Crssp">şi</token>
+	<token  pos="coord."  id="59" lemma="nisip" partOfSpeechTag="Ncms-n">nisip</token>
+	<token  pos="c.d."  id="60" lemma="să" partOfSpeechTag="Qs">să</token>
+	<token  pos="subord."  id="61" lemma="pătrunde" partOfSpeechTag="Vmsp3">pătrundă</token>
+	<token  pos="c.c.t."  id="62" lemma="o_dată_cu" partOfSpeechTag="Spca">o dată cu</token>
+	<token  pos="prep."  id="63" lemma="el" partOfSpeechTag="Pp3msr--------s">el</token>
+	<token  pos="punct."  id="64" lemma="." partOfSpeechTag="punct">.</token>
+	<token  pos="sbj."  id="65" lemma="hol" partOfSpeechTag="Ncmsry">Holul</token>
+	<token  pos="a.subst."  id="66" lemma="bloc" partOfSpeechTag="Ncmsoy">blocului</token>
+	<token  id="67" lemma="mirosi" partOfSpeechTag="Vmii3s">mirosea</token>
+	<token  pos="c.i."  id="68" lemma="a" partOfSpeechTag="Spsa">a</token>
+	<token  pos="prep."  id="69" lemma="varză" partOfSpeechTag="Ncfsrn">varză</token>
+	<token  pos="a.adj."  id="70" lemma="călit" partOfSpeechTag="Afpfsrn">călită</token>
+	<token  pos="coord."  id="71" lemma="şi" partOfSpeechTag="Crssp">şi</token>
+	<token  pos="coord."  id="72" lemma="a" partOfSpeechTag="Spsa">a</token>
+	<token  pos="prep."  id="73" lemma="preş" partOfSpeechTag="Ncfp-n">preşuri</token>
+	<token  pos="a.adj."  id="74" lemma="vechi" partOfSpeechTag="Afp-p-n">vechi</token>
+	<token  pos="punct."  id="75" lemma="." partOfSpeechTag="punct">.</token>
+</text>

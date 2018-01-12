@@ -1,47 +1,35 @@
 package core.token;
 
-import com.sun.xml.internal.txw2.annotation.XmlCDATA;
-import core.Shared.MergedEntity;
-
-import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlSeeAlso;
+import javax.xml.bind.annotation.XmlValue;
 
 @XmlSeeAlso({core.token.TokenizedText.class})
-@XmlRootElement(name = "token")
-public class Token extends MergedEntity
+public class Token 
 {
-    private String id;
-    private String partOfSpeech;
-    private String partOfSpeechTag;
+    private int id;
+    private String pos;
+    private String posTag;
     private String lemma;
-    private String content;
-    public String getContent()
-    {
-        return content;
-    }
+    private String word;
 
-    @XmlValue
-    public void setContent(String word)
-    {
-        this.content = word;
-    }
-
-    public String getId() {
+    public int getId() {
         return id;
     }
 
     @XmlAttribute(name="id")
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getpartOfSpeech()
+    public String getPOS() 
     {
-        return partOfSpeech;
+        return pos;
     }
 
-    @XmlAttribute(name = "partOfSpeech")
-    public void setpartOfSpeech(String partOfSpeech) {
-        this.partOfSpeech = partOfSpeech;
+    @XmlAttribute(name = "pos")
+    public void setPOS(String POS) {
+        this.pos = POS;
     }
 
     public String getLemma() {
@@ -53,24 +41,35 @@ public class Token extends MergedEntity
         this.lemma = lemma;
     }
 
-    public String getpartOfSpeechTag()
+    public String getPosTag()
     {
-    	return partOfSpeechTag;
+    	return posTag;
     }
-
+    
     @XmlAttribute(name="partOfSpeechTag")
-    public void setpartOfSpeechTag(String partOfSpeechTag)
+    public void setPosTag(String posTag)
     {
-    	this.partOfSpeechTag = partOfSpeechTag;
+    	this.posTag = posTag;
     }
-
+    
+    public String getWord()
+    {
+    	return word;
+    }
+    
+    @XmlValue
+    public void setWord(String word)
+    {
+    	this.word = word;
+    }
 
     @Override
     public String toString() {
         return "Token{" +
                 "id=" + id +
-                ", partOfSpeech='" + partOfSpeech + '\'' +
+                ", POS='" + pos + '\'' +
                 ", lemma='" + lemma + '\'' +
+                ", posTag='" + posTag + '\'' +
                 '}';
     }
 

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @XmlSeeAlso({core.token.Token.class})
-@XmlRootElement(name = "text")
+@XmlRootElement(name="text")
 public class TokenizedText
 {
 
@@ -18,7 +18,7 @@ public class TokenizedText
         tokens = new ArrayList<>();
     }
     
-    @XmlElement(name="tok")
+    @XmlElement(name="token")
     public void setTokens(List<Token> tokens)
     {
     	this.tokens = tokens;

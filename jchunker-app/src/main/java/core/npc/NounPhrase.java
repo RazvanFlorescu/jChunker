@@ -1,36 +1,22 @@
 package core.npc;
 
-import core.Shared.MergedEntity;
-
 import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlMixed;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlValue;
 
-@XmlRootElement(name = "nounPhrase")
-public class NounPhrase extends MergedEntity
+import core.token.Token;
+
+public class NounPhrase
 {
 	private static final String LIST_DELIMITER = ",";
-	private String tokenId 	= "";	// reprezinta id-ul token-ului principal (substantivul)
+	private int tokenId;			// reprezinta id-ul token-ului principal (substantivul)
 	private String idList	= "";	// reprezinta lista de id-uri de token-uri aflate in relatie cu substantivul
 	
-	public String getTokenId()
+	public int getTokenId()
 	{
 		return tokenId;
 	}
-	private String content;
-	public String getContent()
-	{
-		return content;
-	}
-
-	@XmlValue
-	public void setContent(String word)
-	{
-		this.content = word;
-	}
+	
 	@XmlAttribute(name="tokenId")
-	public void setTokenId(String tokenId)
+	public void setTokenId(int tokenId)
 	{
 		this.tokenId = tokenId;
 	}
@@ -49,14 +35,19 @@ public class NounPhrase extends MergedEntity
 	/*
 	 * 	ADDITIONAL METHODS
 	 */
-	public void addTokenToList(String id)
+	public void addTokenToList(Token token)
 	{
 		StringBuilder builder = new StringBuilder(idList);
 		if(builder.length() == 0) // empty list
-			builder.append(id);
+			builder.append(token.getId());
 		else
-			builder.append(LIST_DELIMITER + id);
+			builder.append(LIST_DELIMITER + token.getId());
 		
 		idList = builder.toString();
+	}
+	
+	public void addMainToken(Token token)
+	{
+		this.tokenId = token.getId();
 	}
 }

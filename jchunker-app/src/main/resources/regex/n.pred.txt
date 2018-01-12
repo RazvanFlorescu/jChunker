@@ -1,0 +1,3 @@
+(pattern (sequence "(TDFPR RP AFPFP.N NCFP.N SPSA NCFSRY DS1FSRP|NCFSRY DS1FSRP){1} 1:AFPFSRN 2:PD3FPR") (rel_name n.pred))
+(pattern (sequence "(TIFSR NCFSRN)? 1:AFPFSRN 2:NP") (rel_name n.pred))
+(pattern (sequence "(TIFSR){1} 1:NCFSRN (AFPF..N PUNCT){1} 2:SPSA (NCFP.N){1}") (rel_name n.pred))

@@ -1,0 +1,2 @@
+(pattern (sequence "(NCFSRN|NCMSOY SPSA NCFSRN)? 2:TSMS 1:NCMSOY") (rel_name part))
+(pattern (sequence "(TIMSR NCMS.N){1} 2:MOFSRLY 1:NCFSRN") (rel_name part))
