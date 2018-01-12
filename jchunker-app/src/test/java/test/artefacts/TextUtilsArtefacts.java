@@ -21,13 +21,13 @@ public class TextUtilsArtefacts {
         Token token1 = new Token();
         Token token2 = new Token();
 
-        token1.setId("1");
+        token1.setId(1);
         token1.setLemma("apoi");
-        token1.setpartOfSpeech("adverb");
+        token1.setPOS("adverb");
 
-        token2.setId("2");
+        token2.setId(2);
         token2.setLemma("ieși");
-        token2.setpartOfSpeech("verb predicative");
+        token2.setPOS("verb predicative");
 
         tokens.add(token1);
         tokens.add(token2);
@@ -60,13 +60,13 @@ public class TextUtilsArtefacts {
         List<NounPhrase> npList = new ArrayList<>();
         NounPhrase np1 = new NounPhrase();
         NounPhrase np2 = new NounPhrase();
-        np1.setContent("apoi");
+//        np1.setContent("apoi");
         np1.setIdList("1");
-        np1.setTokenId("1");
+        np1.setTokenId(1);
 
-        np2.setContent("ieși");
+//        np2.setContent("ieși");
         np2.setIdList("1");
-        np2.setTokenId("2");
+        np2.setTokenId(2);
 
         npList.add(np1);
         npList.add(np2);
