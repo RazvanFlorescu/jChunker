@@ -15,7 +15,7 @@ public class NounPhraseChunker
 {
 	private static NounPhraseChunkedText npText = new NounPhraseChunkedText();
 	private static Logger logger				= Logger.getLogger(NounPhraseChunker.class);
-	private NounPhraseChunker() {}
+	public NounPhraseChunker() {}
 	
 	public static NounPhraseChunkedText chunk(TokenizedText tokenizedText)
 	{

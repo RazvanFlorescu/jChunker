@@ -5,5 +5,6 @@ import javax.xml.bind.annotation.XmlValue;
 @javax.xml.bind.annotation.XmlTransient
 public class MergedEntity {
 
-
+    public MergedEntity() {
+    }
 }

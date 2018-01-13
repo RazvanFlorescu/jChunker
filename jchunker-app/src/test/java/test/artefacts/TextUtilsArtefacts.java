@@ -50,6 +50,7 @@ public class TextUtilsArtefacts {
 
 
         mergedText.setOutputList(outputList);
+
         return mergedText;
 
     }

@@ -1,5 +1,7 @@
 package core.token;
 
+import core.Shared.MergedEntity;
+
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSeeAlso;
@@ -7,7 +9,7 @@ import javax.xml.bind.annotation.XmlSeeAlso;
 import java.util.ArrayList;
 import java.util.List;
 
-@XmlSeeAlso({core.token.Token.class})
+@XmlSeeAlso({core.token.Token.class, MergedEntity.class})
 @XmlRootElement(name="text")
 public class TokenizedText
 {
