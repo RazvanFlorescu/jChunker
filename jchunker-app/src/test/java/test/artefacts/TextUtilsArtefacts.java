@@ -1,6 +1,7 @@
 package test.artefacts;
 
 import core.Shared.MergedEntity;
+import core.ner.NameEntity;
 import core.ner.NerText;
 import core.npc.NounPhrase;
 import core.npc.NounPhraseChunkedText;
@@ -85,5 +86,22 @@ public class TextUtilsArtefacts {
         nerList.add(ner1);
         nerList.add(ner2);
         return nerList;
+    }
+
+    public static List<NameEntity> createNameEntityList(){
+        NameEntity nE1 = new NameEntity();
+        NameEntity nE2 = new NameEntity();
+
+        nE1.setId(1);
+        nE1.setWord("test");
+
+        nE2.setId(2);
+        nE2.setWord("test2");
+        List<NameEntity> nameEntities = new ArrayList<>();
+        nameEntities.add(nE1);
+        nameEntities.add(nE2);
+
+        return nameEntities;
+
     }
 }

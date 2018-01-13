@@ -50,7 +50,7 @@ public class TextUtilsTest {
 		TokenizedText testText = TextUtilsArtefacts.createTokenizedText();
 		System.out.print("====");
 		//then
-		TokenizedText tokText = TextUtils.unmarshal("C:\\Users\\raluca.plugariu\\Documents\\STS\\jChunker\\jchunker-app\\src\\main\\resources\\inputFiles\\outputText.xml");
+		TokenizedText tokText = TextUtils.unmarshal("C:\\Users\\raluca.plugariu\\Documents\\STS\\jChunker\\jchunker-app\\src\\main\\resources\\regex\\test\\inputText2.xml");
 		//System.out.print("===="+tokText.getTokens().get(0).getId());
 		//assertThat(tokText.getTokens().get(1).getId()).isEqualTo(testText.getTokens().get(1).getId());
 		//assertThat(tokText.getTokens().get(1).getLemma()).isEqualTo(testText.getTokens().get(1).getLemma());
