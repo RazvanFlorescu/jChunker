@@ -10,7 +10,7 @@ import core.token.Token;
 
 import javax.xml.bind.annotation.*;
 
-@XmlSeeAlso({MergedEntity.class , Token.class, NounPhrase.class, NameEntity.class})
+@XmlSeeAlso({Token.class, NounPhrase.class, NameEntity.class})
 @XmlRootElement(name = "text")
 @XmlAccessorType(XmlAccessType.PROPERTY)
 public class MergedText

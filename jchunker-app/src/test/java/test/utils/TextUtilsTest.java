@@ -35,25 +35,24 @@ public class TextUtilsTest {
 	@Test
 	public void testMarshal() throws JAXBException {
 		//when
-		MergedText mergedText= TextUtilsArtefacts.createMergedText();
+		MergedText mergedText= new MergedText();
 		String destination = "C:\\Users\\raluca.plugariu\\Documents\\STS\\jChunker\\jchunker-app\\src\\main\\resources\\inputFiles\\outputTextTest.xml";
 		File file = new File(destination);
 		//then
 		textUtils.marshal(destination,mergedText);
-		//assertTrue(file.exists());
-		//assertTrue(file.length()>1);
+		assertTrue(file.exists());
+		assertTrue(file.length()>1);
 	}
 
 	@Test
 	public void testUnMarshal(){
 		//when
-		TokenizedText testText = TextUtilsArtefacts.createTokenizedText();
-		System.out.print("====");
+		TokenizedText testText = TextUtilsArtefacts.createTokenizedTextUnmarshal();
+
 		//then
 		TokenizedText tokText = TextUtils.unmarshal("C:\\Users\\raluca.plugariu\\Documents\\STS\\jChunker\\jchunker-app\\src\\main\\resources\\regex\\test\\inputText2.xml");
-		//System.out.print("===="+tokText.getTokens().get(0).getId());
-		//assertThat(tokText.getTokens().get(1).getId()).isEqualTo(testText.getTokens().get(1).getId());
-		//assertThat(tokText.getTokens().get(1).getLemma()).isEqualTo(testText.getTokens().get(1).getLemma());
+		assertThat(tokText.getTokens().get(1).getId()).isEqualTo(testText.getTokens().get(1).getId());
+		assertThat(tokText.getTokens().get(1).getWord()).isEqualTo(testText.getTokens().get(1).getWord());
 
 	}
 

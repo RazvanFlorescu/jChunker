@@ -38,6 +38,25 @@ public class TextUtilsArtefacts {
         return tokenizedText;
 
     }
+    public static TokenizedText createTokenizedTextUnmarshal() {
+        List<Token> tokens = new ArrayList<>();
+        Token token1 = new Token();
+        Token token2 = new Token();
+
+        token1.setId(1);
+        token1.setWord("Într");
+
+        token2.setId(2);
+        token2.setWord("o");
+
+        tokens.add(token1);
+        tokens.add(token2);
+
+        TokenizedText tokenizedText = new TokenizedText();
+        tokenizedText.setTokens(tokens);
+        return tokenizedText;
+
+    }
     public static MergedText createMergedText(){
         MergedText mergedText = new MergedText();
         MergedEntity merged1 = new MergedEntity();
