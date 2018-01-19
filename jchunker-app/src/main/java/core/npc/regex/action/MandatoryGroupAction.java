@@ -21,7 +21,10 @@ public class MandatoryGroupAction extends MatchingAction
 			for(MatchingAction child : childrenActionList)
 			{
 				if(!child.match(tokenList))
+				{
+					RegexUtils.clearMatchedTokens(childrenActionList);
 					return false;
+				}
 				
 				matchedTokens.addAll(child.getMatchedTokens());
 			}

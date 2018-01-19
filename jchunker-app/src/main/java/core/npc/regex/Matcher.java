@@ -9,11 +9,13 @@ import core.npc.regex.action.ActionType;
 import core.npc.regex.action.MatchingAction;
 import core.npc.regex.action.RegexUtils;
 import core.token.Token;
+import utils.GeneralUtils;
 
 public final class Matcher
 {
 	private List<Token> tokenList;
 	private List<MatchingAction> actionList;
+	private int startingMatchingIndex;
 	
 	public Matcher(List<MatchingAction> actionList, List<Token> tokenList)
 	{
@@ -23,17 +25,37 @@ public final class Matcher
 	
 	public boolean find()
 	{
-		List<Token> tokenListCopy = new LinkedList<>(tokenList);
-		
-		for(MatchingAction action : actionList)
+		List<Token> tokenListCopy;
+		boolean hasFound;
+		for(int index = startingMatchingIndex; index < tokenList.size(); index++)
 		{
-			if(!action.match(tokenListCopy))
-				return false;
+			hasFound = true;
+			tokenListCopy = tokenList.subList(index, tokenList.size());
+			for(MatchingAction action : actionList)
+			{
+				if(!action.match(tokenListCopy))
+				{
+					hasFound = false;
+					RegexUtils.clearMatchedTokens(actionList);
+					break;
+				}
+				
+				tokenListCopy = tokenListCopy.subList(action.getNumberOfTokenMatched(), tokenListCopy.size());
+			}
 			
-			tokenListCopy = tokenListCopy.subList(action.getNumberOfTokenMatched(), tokenListCopy.size());
+			if(hasFound)
+			{
+				int nextMatchingId = GeneralUtils.getBiggestIdFromTokenList(actionList.get(actionList.size() - 1).getMatchedTokens());
+				if(startingMatchingIndex == nextMatchingId) // this means that nothing has changed
+					startingMatchingIndex = tokenList.size(); // in order to exit from loop
+				else
+					startingMatchingIndex = nextMatchingId;
+				
+				return true;
+			}
 		}
 		
-		return true;
+		return false;
 	}
 	
 	
@@ -57,5 +79,10 @@ public final class Matcher
 		tokenSet.remove(getMainTagToken());
 		
 		return new LinkedList<>(tokenSet);
+	}
+	
+	public void clearMatchedTokens()
+	{
+		RegexUtils.clearMatchedTokens(actionList);
 	}
 }

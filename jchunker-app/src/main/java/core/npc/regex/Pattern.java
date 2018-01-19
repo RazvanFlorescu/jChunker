@@ -68,9 +68,7 @@ public final class Pattern
 		java.util.regex.Matcher matcher, innerMatcher;
 		MatchingAction action;
 		
-		pattern = java.util.regex.Pattern.compile(IDENTIFY_MAIN_POSTAG_REGEX + "|" + IDENTIFY_MODIFIER_POSTAG_REGEX + "|"
-									+ IDENTIFY_MANDATORY_GROUP_REGEX + "|" + IDENTIFY_OPTIONAL_GROUP_REGEX + "|"
-									+ IDENTIFY_OR_RULE_REGEX + "|" + PLAIN_POSTAG_REGEX);
+		pattern = java.util.regex.Pattern.compile("[1,2]:([^ ]*)|\\((.*?)\\)(\\?|\\{1\\})|([^ \\(\\)]+)");
 		matcher = pattern.matcher(regex);
 		
 		while(matcher.find())

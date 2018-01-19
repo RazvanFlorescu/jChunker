@@ -2,6 +2,8 @@ package core.npc.regex.action;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 /**
  * 	Utility class for custom-made regex pattern matching
  * @author Razvan
@@ -9,6 +11,8 @@ import java.util.List;
  */
 public class RegexUtils
 {
+	public static final Logger logger = Logger.getLogger(RegexUtils.class);
+	
 	public static MatchingAction getActionFromList(ActionType actionType, List<MatchingAction> actionList)
 	{
 		for(MatchingAction action : actionList)
@@ -35,5 +39,15 @@ public class RegexUtils
 		}
 		
 		return areEqual;
+	}
+	
+	public static void clearMatchedTokens(List<MatchingAction> actionList)
+	{
+		for(MatchingAction action : actionList)
+		{
+			action.clearMatchedTokens();
+		}
+		
+//		logger.info("Matched Tokens cleared!");
 	}
 }

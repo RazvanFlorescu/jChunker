@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<text>
+    <nounPhrase idList="4,2" tokenId="3"/>
+    <nounPhrase idList="" tokenId="8"/>
+    <nounPhrase idList="" tokenId="11"/>
+    <nounPhrase idList="" tokenId="13"/>
+    <nounPhrase idList="17" tokenId="16"/>
+    <nounPhrase idList="" tokenId="17"/>
+    <nounPhrase idList="21" tokenId="20"/>
+    <nounPhrase idList="" tokenId="23"/>
+    <nounPhrase idList="" tokenId="28"/>
+    <nounPhrase idList="40,41" tokenId="39"/>
+    <nounPhrase idList="" tokenId="41"/>
+    <nounPhrase idList="44" tokenId="43"/>
+    <nounPhrase idList="" tokenId="44"/>
+    <nounPhrase idList="56,57,54" tokenId="55"/>
+    <nounPhrase idList="" tokenId="57"/>
+    <nounPhrase idList="" tokenId="59"/>
+    <nounPhrase idList="66" tokenId="65"/>
+    <nounPhrase idList="" tokenId="66"/>
+    <nounPhrase idList="70" tokenId="69"/>
+    <nounPhrase idList="74" tokenId="73"/>
+    <nameEntity id="44" type="peopleName">Victoria</nameEntity>
+    <nameEntity id="3" type="time">zi</nameEntity>
+    <nameEntity id="13" type="time">ora</nameEntity>
+    <token id="3" lemma="zi" pos="c.c.t." partOfSpeechTag="Ncfsrn">zi</token>
+    <token id="4" lemma="senin" pos="a.adj." partOfSpeechTag="Afpfsrn">senină</token>
+    <token id="2" lemma="un" pos="det." partOfSpeechTag="Tifsr">o</token>
+    <token id="8" lemma="aprilie" pos="prep." partOfSpeechTag="Ncms-n">aprilie</token>
+    <token id="11" lemma="ceas" pos="sbj." partOfSpeechTag="Ncfpry">ceasurile</token>
+    <token id="13" lemma="oră" pos="c.d." partOfSpeechTag="Ncfsry">ora</token>
+    <token id="16" lemma="Winston" pos="sbj." partOfSpeechTag="Np">Winston</token>
+    <token id="17" lemma="Smith" pos="a.subst." partOfSpeechTag="Np">Smith</token>
+    <token id="20" lemma="bărbie" pos="prep." partOfSpeechTag="Ncfsry">bărbia</token>
+    <token id="21" lemma="înfundat" pos="a.adj." partOfSpeechTag="Afpfsrn">înfundată</token>
+    <token id="23" lemma="piept" pos="prep." partOfSpeechTag="Ncms-n">piept</token>
+    <token id="28" lemma="vânt" pos="prep." partOfSpeechTag="Ncmsry">vântul</token>
+    <token id="39" lemma="uşă" pos="prep." partOfSpeechTag="Ncfpry">uşile</token>
+    <token id="40" lemma="de" pos="a.subst." partOfSpeechTag="Spsa">de</token>
+    <token id="41" lemma="sticlă" pos="prep." partOfSpeechTag="Ncfsrn">sticlă</token>
+    <token id="43" lemma="bloc" pos="a.subst." partOfSpeechTag="Ncmsoy">Blocului</token>
+    <token id="44" lemma="victorie" pos="a.subst." partOfSpeechTag="Ncfsry">Victoria</token>
+    <token id="55" lemma="vârtej" pos="c.d." partOfSpeechTag="Ncms-n">vârtej</token>
+    <token id="56" lemma="de" pos="a.subst." partOfSpeechTag="Spsa">de</token>
+    <token id="57" lemma="praf" pos="prep." partOfSpeechTag="Ncms-n">praf</token>
+    <token id="54" lemma="un" pos="det." partOfSpeechTag="Timsr">un</token>
+    <token id="59" lemma="nisip" pos="coord." partOfSpeechTag="Ncms-n">nisip</token>
+    <token id="65" lemma="hol" pos="sbj." partOfSpeechTag="Ncmsry">Holul</token>
+    <token id="66" lemma="bloc" pos="a.subst." partOfSpeechTag="Ncmsoy">blocului</token>
+    <token id="69" lemma="varză" pos="prep." partOfSpeechTag="Ncfsrn">varză</token>
+    <token id="70" lemma="călit" pos="a.adj." partOfSpeechTag="Afpfsrn">călită</token>
+    <token id="73" lemma="preş" pos="prep." partOfSpeechTag="Ncfp-n">preşuri</token>
+    <token id="74" lemma="vechi" pos="a.adj." partOfSpeechTag="Afp-p-n">vechi</token>
+</text>

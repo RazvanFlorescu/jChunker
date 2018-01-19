@@ -14,7 +14,9 @@ import core.token.Token;
 import core.token.TokenizedText;
 
 import java.io.File;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 public class TextUtils {
 
@@ -31,7 +33,7 @@ public class TextUtils {
 			jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
 			jaxbMarshaller.marshal(mergedText, file);
-			jaxbMarshaller.marshal(mergedText, System.out);
+//			jaxbMarshaller.marshal(mergedText, System.out);
 
 		} catch (JAXBException e) {
 			e.printStackTrace();
@@ -63,19 +65,56 @@ public class TextUtils {
 			List<NerText> nerTexts)
 	{
 		MergedText mergedText = new MergedText();
-		for(Token token : tokenizedText.getTokens()){
-			NounPhrase nP = GeneralUtils.getNpcByTokenId(chunkedText,token.getId());
-			List<NameEntity> ners = GeneralUtils.getNersByTokenId(nerTexts,token.getId());
-			mergedText.getOutputList().add(token);
-			if(nP != null){
-				mergedText.getOutputList().add(nP);
-			}
-			if(ners!=null){
-				for(NameEntity ner : ners){
-					mergedText.getOutputList().add(ner);
-				}
+		Set<Token> tokenSet = new LinkedHashSet<>();
+//		for(Token token : tokenizedText.getTokens()){
+//			NounPhrase nP = GeneralUtils.getNpcByTokenId(chunkedText,token.getId());
+//			List<NameEntity> ners = GeneralUtils.getNersByTokenId(nerTexts,token.getId());
+//			mergedText.getOutputList().add(token);
+//			if(nP != null){
+//				mergedText.getOutputList().add(nP);
+//			}
+//			if(ners!=null){
+//				for(NameEntity ner : ners){
+//					mergedText.getOutputList().add(ner);
+//				}
+//			}
+//		}
+		
+		for(NounPhrase np : chunkedText.getNounPhraseList())
+		{
+			// add the noun phrase
+			mergedText.getOutputList().add(np);
+			
+			// find the main token
+			tokenSet.add(GeneralUtils.getTokenFromId(tokenizedText.getTokens(), np.getTokenId()));
+			
+			// find the tokens from the token list
+			String[] tokenIds = np.getIdList().split(",");
+			for(String tokenId : tokenIds)
+			{
+				if("".equals(tokenId))
+					continue;
+				
+				tokenSet.add(GeneralUtils.getTokenFromId(tokenizedText.getTokens(), Integer.parseInt(tokenId)));
 			}
 		}
+		
+		for(NerText nerText : nerTexts)
+		{
+			for(NameEntity ne : nerText.getNameEntities())
+			{
+				// add the name entity
+				mergedText.getOutputList().add(ne);
+				
+				// find the token
+				tokenSet.add(GeneralUtils.getTokenFromId(tokenizedText.getTokens(), ne.getId()));
+			}
+		}
+		
+		// insert the tokens
+		for(Token token : tokenSet)
+			mergedText.getOutputList().add(token);
+		
 		return mergedText;
 	}
 

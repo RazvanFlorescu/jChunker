@@ -9,6 +9,8 @@ import core.ner.NameEntity;
 import core.ner.NerText;
 import core.npc.NounPhrase;
 import core.npc.NounPhraseChunkedText;
+import core.token.Token;
+
 import org.apache.log4j.Logger;
 
 public class GeneralUtils {
@@ -88,5 +90,28 @@ public class GeneralUtils {
             }
         }
         return nameEntitiesResult;
+    }
+    
+    public static Token getTokenFromId(List<Token> tokenList,int tokenId)
+    {
+    	for(Token token : tokenList)
+    	{
+    		if(token.getId() == tokenId)
+    			return token;
+    	}
+    	
+    	return null;
+    }
+    
+    public static int getBiggestIdFromTokenList(List<Token> tokenList)
+    {
+    	int maxTokenId = 0;
+    	for(Token token : tokenList)
+    	{
+    		if(token.getId() > maxTokenId)
+    			maxTokenId = token.getId();
+    	}
+    	
+    	return maxTokenId;
     }
 }

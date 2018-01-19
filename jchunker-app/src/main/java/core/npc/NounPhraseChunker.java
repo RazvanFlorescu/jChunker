@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 import core.npc.regex.FileRegexReader;
 import core.npc.regex.Matcher;
 import core.npc.regex.Pattern;
+import core.npc.regex.action.RegexUtils;
 import core.token.Token;
 import core.token.TokenizedText;
 
@@ -37,15 +38,24 @@ public class NounPhraseChunker
 				Pattern pattern = new Pattern();
 				pattern.compile(regex);
 				Matcher matcher = pattern.matcher(tokenizedText.getTokens());
-				if(matcher.find())
+				while(matcher.find())
 				{
 					logger.info("MATCH FOUND!!!");
-					NounPhrase np = NpcUtils.getNounPhrase(nounPhraseList, matcher.getMainTagToken());
-					for(Token matchedToken : matcher.getMatchingTokens())
-						np.addTokenToList(matchedToken);
+					List<NounPhrase> npList = NpcUtils.getNounPhrase(nounPhraseList, matcher.getMainTagToken());
+					if(npList.isEmpty())
+						logger.info("No noun phrase found for the token: " + matcher.getMainTagToken());
+					else
+					{
+						for(NounPhrase np : npList)
+						{
+							for(Token matchedToken : matcher.getMatchingTokens())
+								np.addTokenToList(matchedToken);
+							
+							logger.info(np);
+							matcher.clearMatchedTokens();
+						}
+					}
 				}
-				else
-					logger.info("No matching has been found for: " + regex);
 			}
 		}
 		
@@ -57,7 +67,7 @@ public class NounPhraseChunker
 	private static Map<String, List<String>> buildRegexesMap()
 	{
 		FileRegexReader reader = new FileRegexReader();
-		reader.process("D:\\facultate\\GithubRepositories\\jChunker\\jchunker-app\\src\\main\\resources\\regex");
+		reader.process(System.getProperty("user.dir") + "\\src\\main\\resources\\regex");
 		
 		return reader.getRelationMap();
 	}

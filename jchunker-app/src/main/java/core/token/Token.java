@@ -74,6 +74,7 @@ public class Token extends MergedEntity
                 ", POS='" + pos + '\'' +
                 ", lemma='" + lemma + '\'' +
                 ", posTag='" + posTag + '\'' +
+                ", word='" + word + '\'' +
                 '}';
     }
 

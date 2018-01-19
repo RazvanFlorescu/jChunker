@@ -26,14 +26,15 @@ public class NpcUtils
 		return npList;
 	}
 	
-	public static NounPhrase getNounPhrase(List<NounPhrase> npList, Token token)
+	public static List<NounPhrase> getNounPhrase(List<NounPhrase> npList, Token token)
 	{
+		List<NounPhrase> resultList = new ArrayList<>();
 		for(NounPhrase np : npList)
 		{
-			if(np.getTokenId() == token.getId())
-				return np;
+			if(np.getTokenId() == token.getId() || np.getIdList().contains(Integer.toString(token.getId())))
+				resultList.add(np);
 		}
 		
-		return null;
+		return resultList;
 	}
 }

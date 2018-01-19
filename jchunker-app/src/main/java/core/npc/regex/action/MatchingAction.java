@@ -41,4 +41,12 @@ public abstract class MatchingAction
 	{
 		return matchedTokens;
 	}
+	
+	/*
+	 * 	ADDITIONAL METHODS
+	 */
+	public void clearMatchedTokens()
+	{
+		matchedTokens.clear();
+	}
 }

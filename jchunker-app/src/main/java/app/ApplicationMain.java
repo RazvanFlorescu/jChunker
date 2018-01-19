@@ -11,6 +11,7 @@ import core.ner.NerText;
 import core.npc.NounPhraseChunkedText;
 import core.npc.NounPhraseChunker;
 import core.text.MergedText;
+import core.token.Token;
 import core.token.TokenizedText;
 import utils.GeneralUtils;
 import utils.TextUtils;
@@ -34,9 +35,14 @@ public class ApplicationMain
 		String destination = args[1];
 
 
+		logger.info("Validating: " + source);
 		GeneralUtils.validateInputPath(source);
+		
+		logger.info("Validating: " + destination);
 		GeneralUtils.validateOutputPath(destination);
+		
 		destination = GeneralUtils.outputPathGenerator(destination);
+		logger.info("Destination is: " + destination);
 		//System.out.print(destination);
 		/**
 		 * TokenizedText will contain a list of Tokens
@@ -52,14 +58,20 @@ public class ApplicationMain
 		 * 	..
 		 * </text>
 		 */
+		logger.info("Unmarshalling input...");
 		TokenizedText tokenizedText = TextUtils.unmarshal(source);
-		System.out.print(tokenizedText.getTokens());
+		
+		logger.info("Tokens:");
+		for(Token token : tokenizedText.getTokens())
+			logger.info(token);
+		
 		/**
 		 * Step 1. Noun Phrase Chucking
 		 * 	At this step, NounPharseChunker consumes a sequence
 		 * of <token> elements and produces <nounPhrase> elements
 		 * <nounPhrase tokenId="" idList="" />
 		 */
+		logger.info("Chuncking the tokens...");
 		NounPhraseChunkedText chunkedText = NounPhraseChunker.chunk(tokenizedText);
 		
 		/**
@@ -68,6 +80,8 @@ public class ApplicationMain
 		 * of <token> elements <nameEntity> elements.
 		 * <nameEntity tokenId="" type="" />
 		 */
+		
+		logger.info("Extracting NERs...");
 		NerExtractor  nerExtractor = null;
 		List<NerText> nerTexts     = null;
 		try
@@ -137,10 +151,13 @@ public class ApplicationMain
 		nerTexts.add(nT2);
 		nerTexts.add(nT3);
 		*/  // user to test TextUtils.merge method
+		logger.info("Merging text...");
 		MergedText mergedText = TextUtils.merge(tokenizedText, chunkedText, nerTexts);
 
+		logger.info("Text merged. Marshalling...");
 		TextUtils.marshal(destination, mergedText);
 		
+		logger.info("Marshal done. Output provided at: " + destination);
 	}
 	
 }

@@ -40,6 +40,9 @@ public class NounPhrase extends MergedEntity
 	 */
 	public void addTokenToList(Token token)
 	{
+		if(idList.contains(Integer.toString(token.getId())))
+			return;
+		
 		StringBuilder builder = new StringBuilder(idList);
 		if(builder.length() == 0) // empty list
 			builder.append(token.getId());
@@ -52,5 +55,14 @@ public class NounPhrase extends MergedEntity
 	public void addMainToken(Token token)
 	{
 		this.tokenId = token.getId();
+	}
+	
+	/*
+	 * 	OVERRIDED METHODS
+	 */
+	@Override
+	public String toString()
+	{
+		return "NP[ TokenId= " + tokenId + ", IdList=" + idList + "]";
 	}
 }

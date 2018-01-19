@@ -24,7 +24,7 @@ public class TestMain
 		// init the logger
 		BasicConfigurator.configure();
 		
-		TokenizedText tokenizedText = TextUtils.unmarshal("src\\main\\resources\\regex\\test\\inputText2.xml");
+		TokenizedText tokenizedText = TextUtils.unmarshal("src\\main\\resources\\regex\\test\\token_input_small.xml");
 		
 		NounPhraseChunkedText chunkedText = NounPhraseChunker.chunk(tokenizedText);
 		

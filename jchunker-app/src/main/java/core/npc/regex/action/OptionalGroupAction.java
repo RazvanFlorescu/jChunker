@@ -19,23 +19,21 @@ public class OptionalGroupAction extends MatchingAction
 			return true;
 		else
 		{
-			boolean isNotMatchingAnyChild = true;
 			boolean isMatchingAllChilds	  = true;
 			for(MatchingAction child : childrenActionList)
 			{
-				if(child.match(tokenList))
-					isNotMatchingAnyChild = false;
-				else
+				if(!child.match(tokenList))
 					isMatchingAllChilds = false;
 			}
 			
 			if(isMatchingAllChilds)
 			{
 				matchedTokens.addAll(getChildMatchedTokens());
-				return true;
 			}
+			else
+				RegexUtils.clearMatchedTokens(childrenActionList);
 			
-			return isNotMatchingAnyChild;
+			return true;
 		}
 	}
 
