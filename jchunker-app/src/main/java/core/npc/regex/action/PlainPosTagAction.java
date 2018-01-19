@@ -17,6 +17,7 @@ public class PlainPosTagAction extends MatchingAction
 	@Override
 	public boolean match(List<Token> tokenList)
 	{
+        System.out.print(tokenList.size());
 		if(RegexUtils.arePosTagsEqual(tokenList.get(getNumberOfTokenMatched()).getPosTag().toUpperCase(),posTag.toUpperCase()))
 		{
 			matchedTokens.add(tokenList.get(getNumberOfTokenMatched()));

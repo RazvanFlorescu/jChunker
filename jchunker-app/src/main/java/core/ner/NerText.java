@@ -1,7 +1,9 @@
 package core.ner;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class NerText
 {
@@ -16,9 +18,15 @@ public class NerText
 	{
 		nameEntities.add(nameEntity);
 	}
-	
+
+	public void setNameEntities(List<core.ner.NameEntity> nameEntities) {
+		this.nameEntities = nameEntities;
+	}
+
 	public List<NameEntity> getNameEntities()
 	{
 		return nameEntities;
 	}
+
+
 }

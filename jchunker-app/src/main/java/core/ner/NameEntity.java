@@ -1,10 +1,12 @@
 package core.ner;
 
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlValue;
 
 import core.Shared.MergedEntity;
 
+@XmlRootElement(name="nameEntity")
 public class NameEntity extends MergedEntity
 {
 	//idToken,type

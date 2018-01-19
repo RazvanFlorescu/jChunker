@@ -1,11 +1,13 @@
 package core.token;
 
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlValue;
 
 import core.Shared.MergedEntity;
 
+@XmlRootElement(name="token")
 @XmlSeeAlso({core.token.TokenizedText.class})
 public class Token extends MergedEntity
 {

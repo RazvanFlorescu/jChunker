@@ -39,10 +39,11 @@ public class GeneralUtils {
             if (!dir.isDirectory()) {
                 logger.error("Error : Output directory not found !");
                 System.exit(1);             // output directory not found
-            } else if (!path.substring(path.length() - 4).equals(".xml")) {
-                logger.error("Error : Output file must have xml extension !");
-                System.exit(2);
             }   //if outputpath is a full path and the given file name does not have an xml extension
+        }
+        else if (!path.substring(path.length() - 4).equals(".xml")) {
+            logger.error("Error : Output file must have xml extension !");
+            System.exit(2);
         }
     }
     public static String outputPathGenerator(String destination){

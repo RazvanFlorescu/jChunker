@@ -1,10 +1,12 @@
 package core.npc;
 
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
 
 import core.Shared.MergedEntity;
 import core.token.Token;
 
+@XmlRootElement(name="nounPhrase")
 public class NounPhrase extends MergedEntity
 {
 	private static final String LIST_DELIMITER = ",";

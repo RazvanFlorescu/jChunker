@@ -1,199 +1,199 @@
 
 <text>
 
-    <tok id = "1" partOfSpeech =  "adverb" lemma =
-            "apoi">
+    <token id = "1" partOfSpeech =  "adverb" lemma =
+            "apoi" partOfSpeechTag  = " ">
         Apoi
-    </tok>
+    </token>
 
-    <tok id = "2" partOfSpeech =  "verb predicative" lemma =
+    <token id = "2" partOfSpeech =  "verb predicative" lemma =
             "ieși">
         ieși
-    </tok>
+    </token>
 
-    <tok id = "3" partOfSpeech = "adverb" lemma = "repede">
+    <token id = "3" partOfSpeech = "adverb" lemma = "repede">
         repede
-    </tok>
+    </token>
 
-    <tok id = "4" partOfSpeech = "adpartOfSpeechition" lemma = "pe">pe
-    </tok>
+    <tokenen id = "4" partOfSpeech = "adpartOfSpeechition" lemma = "pe">pe
+    </tokenen>
 
-    <tok id = "5" partOfSpeech = "noun common" lemma = "platformă">platformă
-    </tok>
+    <token id = "5" partOfSpeech = "noun common" lemma = "platformă">platformă
+    </token>
 
-    <tok id = "6" partOfSpeech = "adverb" lemma = "chiar">
+    <token id = "6" partOfSpeech = "adverb" lemma = "chiar">
         chiar
-    </tok>
+    </token>
 
-    <tok id = "7" partOfSpeech = "adverb" lemma = " în">
+    <token id = "7" partOfSpeech = "adverb" lemma = " în">
         în
-    </tok>
+    </token>
 
-    <tok id = "8" partOfSpeech  = "noun common" lemma = "clipa" >
+    <token id = "8" partOfSpeech  = "noun common" lemma = "clipa" >
         clipa
-    </tok>
+    </token>
 
-    <tok id = "9" partOfSpeech = "adverb" lemma = "când">
+    <token id = "9" partOfSpeech = "adverb" lemma = "când">
         când
-    </tok>
+    </token>
 
-    <tok id = "10" partOfSpeech = "pronoun reflexive" lemma = "se">
+    <token id = "10" partOfSpeech = "pronoun reflexive" lemma = "se">
         se
-    </tok>
+    </token>
 
-    <tok id = "11" partOfSpeech = "verb predicative" lemma = "opri">
+    <token id = "11" partOfSpeech = "verb predicative" lemma = "opri">
         oprea
-    </tok>
+    </token>
 
-    <tok id = "12" partOfSpeech = "noun common" lemma =  "tramvai">
+    <token id = "12" partOfSpeech = "noun common" lemma =  "tramvai">
         tramvaiul
-    </tok>
+    </token>
 
 
-    <tok id = "13" partOfSpeech = "adverb" lemma =  "coborând">
+    <token id = "13" partOfSpeech = "adverb" lemma =  "coborând">
         Coborând
-    </tok>
+    </token>
 
-    <tok id = "14" partOfSpeech = "noun proper" lemma =  "Gavrilescu">
+    <token id = "14" partOfSpeech = "noun proper" lemma =  "Gavrilescu">
         Gavrilescu
-    </tok>
+    </token>
 
-    <tok id = "15" partOfSpeech = "verb predicative" lemma =  "regăsi">
+    <token id = "15" partOfSpeech = "verb predicative" lemma =  "regăsi">
         regăsi
-    </tok>
+    </token>
 
-    <tok id = "16" partOfSpeech = "noun common" lemma =  "arșița">
+    <token id = "16" partOfSpeech = "noun common" lemma =  "arșița">
         arșița
-    </tok>
+    </token>
 
-    <tok id = "17" partOfSpeech = "conjunction coordinating" lemma =  "și">
+    <token id = "17" partOfSpeech = "conjunction coordinating" lemma =  "și">
         și
-    </tok>
+    </token>
 
-    <tok id = "18" partOfSpeech = "noun common" lemma =  "mirosul">
+    <token id = "18" partOfSpeech = "noun common" lemma =  "mirosul">
         mirosul
-    </tok>
+    </token>
 
-    <tok id = "19" partOfSpeech = "adpartOfSpeechition" lemma
+    <token id = "19" partOfSpeech = "adpartOfSpeechition" lemma
             =  "de">
         de
-    </tok>
+    </token>
 
-    <tok id = "20" partOfSpeech = "noun common" lemma
+    <token id = "20" partOfSpeech = "noun common" lemma
             =  "asfalt">
         asfalt
-    </tok>
+    </token>
 
-    <tok id = "21" partOfSpeech = "adjective" lemma
+    <token id = "21" partOfSpeech = "adjective" lemma
             =  "topit">
         topit
-    </tok>
+    </token>
 
-    <tok id = "22" partOfSpeech = "verb predicative" lemma = "traversa">
+    <token id = "22" partOfSpeech = "verb predicative" lemma = "traversa">
         Traversă
-    </tok>
+    </token>
 
-    <tok id = "23" partOfSpeech = "adpartOfSpeechition" lemma = "cu">
+    <token id = "23" partOfSpeech = "adpartOfSpeechition" lemma = "cu">
         cu
-    </tok>
+    </token>
 
 
-    <tok id = "24" partOfSpeech = "noun common" lemma = "greutate">
+    <token id = "24" partOfSpeech = "noun common" lemma = "greutate">
         greutate
-    </tok>
+    </token>
 
-    <tok id = "25" partOfSpeech = "noun common" lemma = "strada">
+    <token id = "25" partOfSpeech = "noun common" lemma = "strada">
         strada
-    </tok>
+    </token>
 
-    <tok id = "26" partOfSpeech = "conjunction" lemma = "ca">
+    <token id = "26" partOfSpeech = "conjunction" lemma = "ca">
         ca
-    </tok>
+    </token>
 
-    <tok id ="27" partOfSpeech="particle conjunctive" lemma = "să">
+    <token id ="27" partOfSpeech="particle conjunctive" lemma = "să">
         să
-    </tok>
+    </token>
 
 
-    <tok id ="28" partOfSpeech="verb predicativ" lemma = "aștepte">
+    <token id ="28" partOfSpeech="verb predicativ" lemma = "aștepte">
         aștepte
-    </tok>
+    </token>
 
-    <tok id ="29" partOfSpeech="noun common" lemma = "tramvaiul">
+    <token id ="29" partOfSpeech="noun common" lemma = "tramvaiul">
         tramvaiul
-    </tok>
+    </token>
 
-    <tok id ="30" partOfSpeech="adpartOfSpeechition" lemma = "spre">
+    <token id ="30" partOfSpeech="adpartOfSpeechition" lemma = "spre">
         spre
-    </tok>
+    </token>
 
-    <tok id ="31" partOfSpeech="noun common" lemma = "direcția">
+    <token id ="31" partOfSpeech="noun common" lemma = "direcția">
         direcția
-    </tok>
+    </token>
 
-    <tok id ="32" partOfSpeech="noun common" lemma = "opusă">
+    <token id ="32" partOfSpeech="noun common" lemma = "opusă">
         opusă
-    </tok>
+    </token>
 
-    <tok id ="33" partOfSpeech="noun proper" lemma = "Gavrilescule">
+    <token id ="33" partOfSpeech="noun proper" lemma = "Gavrilescule">
         Gavrilescule
-    </tok>
+    </token>
 
 
-    <tok id ="34" partOfSpeech="verb predicative" lemma = "șopti">
+    <token id ="34" partOfSpeech="verb predicative" lemma = "șopti">
         șopti
-    </tok>
+    </token>
 
-    <tok id ="35" partOfSpeech="noun common" lemma = "atenție">
+    <token id ="35" partOfSpeech="noun common" lemma = "atenție">
         atenție
-    </tok>
+    </token>
 
-    <tok id ="36" partOfSpeech="conjunction" lemma = "că">
+    <token id ="36" partOfSpeech="conjunction" lemma = "că">
         că
-    </tok>
+    </token>
 
-    <tok id ="37" partOfSpeech="adverb" lemma = "parcă">
+    <token id ="37" partOfSpeech="adverb" lemma = "parcă">
         parcă
-    </tok>
+    </token>
 
-    <tok id ="38" partOfSpeech="verb auxiliary" lemma = "avea">
+    <token id ="38" partOfSpeech="verb auxiliary" lemma = "avea">
         ai
-    </tok>
+    </token>
 
-    <tok id ="39" partOfSpeech="verb predicative" lemma = "începe">
+    <token id ="39" partOfSpeech="verb predicative" lemma = "începe">
         începe
-    </tok>
+    </token>
 
 
-    <tok id ="40" partOfSpeech="particle conjunctive" lemma = "să">
+    <token id ="40" partOfSpeech="particle conjunctive" lemma = "să">
         să
-    </tok>
+    </token>
 
-    <tok id ="41" partOfSpeech="verb predicative" lemma = " îmbătrâni">
+    <token id ="41" partOfSpeech="verb predicative" lemma = " îmbătrâni">
         îmbătrânești
-    </tok>
+    </token>
 
-    <tok id ="42" partOfSpeech="pronoun reflexive" lemma = "tu">
+    <token id ="42" partOfSpeech="pronoun reflexive" lemma = "tu">
         Te
-    </tok>
+    </token>
 
-    <tok id ="43" partOfSpeech="verb predicative" lemma = "ramoli">
+    <token id ="43" partOfSpeech="verb predicative" lemma = "ramoli">
         ramolești
-    </tok>
+    </token>
 
-    <tok id ="44" partOfSpeech="pronoun personal" lemma = "tu">
+    <token id ="44" partOfSpeech="pronoun personal" lemma = "tu">
         îți
-    </tok>
+    </token>
 
-    <tok id ="45" partOfSpeech="pronoun personal" lemma = "tu">
+    <token id ="45" partOfSpeech="pronoun personal" lemma = "tu">
         îți
-    </tok>
+    </token>
 
-    <tok id ="46" partOfSpeech="verb predicative" lemma = "pierde">
+    <token id ="46" partOfSpeech="verb predicative" lemma = "pierde">
         pierzi
-    </tok>
+    </token>
 
-    <tok id ="47" partOfSpeech="noun common" lemma = "memorie">
+    <token id ="47" partOfSpeech="noun common" lemma = "memorie">
         memoria
-    </tok>
+    </token>
 </text>

@@ -1,5 +1,6 @@
 package app;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.apache.log4j.BasicConfigurator;
@@ -21,22 +22,10 @@ public class ApplicationMain
 
 	public static void main(String[] args)
 	{
-		// FIXME: (info) parametri de forma : ((dir)/)*{fileName}.{fileExtension}
-		// aici ar trebui sa faci o mica verificare a parametrilor si anume :
-		// 1. exista fisierul de intrare ? daca nu exista aplicatia crapa cu o exceptie custom
-		// 2. al doilea argument poate sa fie un director unde va trebui sa creezi fisierul de output
-		// caz in care va trebui sa verifici inainte de a executa programul ca exista acel director
-		// si deasemenea sa ai definita o constanta cu un nume default
-		// daca primesti un path complet pe al doilea argument, adica iti zice exact cum sa se numeasca fisierul
-		// trebuie sa verifici pe langa faptul ca exista directorul sa verifici daca mai exista deja un fisier 
-		// cu acelasi nume. Daca da, fisierul care e acolo il redenumesti cu timestamp-ul la final si abia apoi
-		// salvezi output-ul nostru...cu alte cuvinte sa nu suprascrii !!!
-		// implementeaza asta intr-o metoda si apoi sterge tot comentariul asta
-		// foloseste LOGGER !!! nu printa exceptiile !
-		// logheaza orice informatie utila pe masura ce aplicatia merge.. e o regula generala
-		// fa-ti o clasa noua, GeneralUtils ceva de genu in care sa ai metode statice... nu uita sa faci constructorul privat fdc e clasa utilitara
+
 		BasicConfigurator.configure();
 		if(args.length != 2){
+			System.out.print(args.length);
 			logger.error("Error : wrong number of arguments from command line! ");
 			System.exit(0);
 		}
@@ -48,7 +37,7 @@ public class ApplicationMain
 		GeneralUtils.validateInputPath(source);
 		GeneralUtils.validateOutputPath(destination);
 		destination = GeneralUtils.outputPathGenerator(destination);
-		System.out.print(destination);
+		//System.out.print(destination);
 		/**
 		 * TokenizedText will contain a list of Tokens
 		 * Token is a JAXB annotated class with the 
@@ -64,7 +53,7 @@ public class ApplicationMain
 		 * </text>
 		 */
 		TokenizedText tokenizedText = TextUtils.unmarshal(source);
-
+		System.out.print(tokenizedText.getTokens());
 		/**
 		 * Step 1. Noun Phrase Chucking
 		 * 	At this step, NounPharseChunker consumes a sequence
@@ -81,7 +70,7 @@ public class ApplicationMain
 		 */
 		NerExtractor  nerExtractor = null;
 		List<NerText> nerTexts     = null;
-		/*try
+		try
 		{
 			nerExtractor = new NerExtractor();
 			nerTexts     = nerExtractor.extract(tokenizedText);
@@ -90,7 +79,7 @@ public class ApplicationMain
 			logger.error("Step 2. Failed !", e);
 			System.exit(1);
 		}
-		*/
+
 		
 		/**
 		 * Step 3. Merge& Export

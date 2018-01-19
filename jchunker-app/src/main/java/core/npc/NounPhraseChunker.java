@@ -57,7 +57,7 @@ public class NounPhraseChunker
 	private static Map<String, List<String>> buildRegexesMap()
 	{
 		FileRegexReader reader = new FileRegexReader();
-		reader.process("F:\\facultate\\ANU_3-Cursanti\\Inteligenta artificiala\\git\\jChunker\\jchunker-app\\src\\main\\resources\\regex");
+		reader.process("D:\\facultate\\GithubRepositories\\jChunker\\jchunker-app\\src\\main\\resources\\regex");
 		
 		return reader.getRelationMap();
 	}
