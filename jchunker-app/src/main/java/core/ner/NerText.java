@@ -21,4 +21,9 @@ public class NerText
 	{
 		return nameEntities;
 	}
+
+	public void setNameEntities(List<NameEntity> nameEntities)
+	{
+		this.nameEntities = nameEntities;
+	}
 }
